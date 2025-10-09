@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Ayuda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Binevenido</h1>
+    <h5>Si tienes, dudas abre el centro de ayudas</h5>
+    <button id="abrir">Abrir centro de ayuda</button>
+
+    <dialog id="miDialogo">
+        <h3>Centro de ayuda</h3>
+
+        <details>
+            <summary>¿Qué es este sitio?</summary>
+            <p>Esto es un sitio de prueba para la práctica de uso de diálogos</p>
+        </details>
+
+        <details>
+            <summary>¿Cómo cierro este cuadro?</summary>
+            <p>Haciendo clic sobre el botón inferior "Cerrar"</p>
+        </details>
+
+        <details>
+            <summary>¿Qué tecnologías se usan?</summary>
+            <p>HTML5, CSS3 y un poco de JavaScript para la interactividad</p>
+        </details>
+
+        <button id="cerrar">Cerrar</button>
+    </dialog>
+
+    <script>
+        const dialogo = document.getElementById("miDialogo");
+        document.getElementById("abrir").addEventListener("click", () => dialogo.showModal());
+        document.getElementById("cerrar").addEventListener("click", () => dialogo.close());
+    </script>
+
+</body>
+</html>
