@@ -1,0 +1,9 @@
+
+
+function abrir(id) {
+
+    cons
+
+}
+    
+
