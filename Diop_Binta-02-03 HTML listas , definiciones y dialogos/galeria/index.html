@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Imágenes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
     
@@ -12,16 +12,16 @@
     <h5>Haz clic en una imagen para ver más detalles</h5>
 
     <div class="galeria">
-        <img src="https://picsum.photos/id/142/4272/2848" alt="" id="img1" onclick="abrir('img1')">
-        <img src="https://picsum.photos/id/158/4836/3224" alt="" id="img2" onclick="abrir('img2')">
-        <img src="https://picsum.photos/id/164/1200/800" alt="" id="img3" onclick="abrir('img3')">
-        <img src="https://picsum.photos/id/129/4910/3252" alt="" id="img4" onclick="abrir('img4')">
-        <img src="https://picsum.photos/id/133/2742/1828" alt="" id="img5" onclick="abrir('img5')">
+        <img src="./assets/img/a.jpg" alt="Montaña" id="img1">
+        <img src="./assets/img/b.webp" alt="Perro" id="img2">
+        <img src="./assets/img/c.jpg" alt="Bosque" id="img3">
+        <img src="./assets/img/d.webp" alt="Bosque" id="img4">
+        <img src="./assets/img/e.jpg" alt="Bosque" id="img5">
     </div>
     
-    <dialog class="miDialogo">
+    <dialog id="miDialogo">
+        <img id="imagenGrande" src="" alt="Imagen ampliada">
         <details>
-            <img id="imagenGrande" src="" alt="Imagen agrandada">
             <summary>Descripción</summary>
             <p id="descripcion"></p>
         </details>
