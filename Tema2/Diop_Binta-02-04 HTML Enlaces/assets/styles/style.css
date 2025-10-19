@@ -75,12 +75,6 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#enlaces, #correo, #archivos {
-    display: flex;
-    gap: 0;
-    flex-direction: column;
-}
-
 #pdf {
     font-size: medium;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
