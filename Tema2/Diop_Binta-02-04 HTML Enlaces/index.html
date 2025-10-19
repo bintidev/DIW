@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enlaces 1</title>
-    <link rel="stylesheet" href="./assests/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
     
@@ -13,7 +13,7 @@
         <h1>Binta - HTML Enlaces 1</h1>
     </div>
 
-    <nav id="navegacion">
+    <nav class="navegacion">
         <a href="#inicio">Principio</a>
         <a href="#mitad">Mitad</a>
         <a href="#fin">Final</a>
@@ -27,62 +27,112 @@
 
     <div id="container">
         
-        <h4>Ejercicio 1. Crea un documento html con el siguiente contenido (no usar tildes)</h4>
-            <p id="inicio">
-                El Ministerio de la Verdad -que en neolengua<sub>1</sub> se le llamaba el Miniver- era diferente, hasta un extremo
-                asombroso, de cualquier otro objeto que se presentara a la vista. Era una enorme estructura piramidal de
-                cemento armado blanco y reluciente, que se elevaba, terraza tras terraza, a unos trescientos metros de altura. <br>
+        <main>
+            <h4 id="inicio">Ejercicio 1. Crea un documento html con el siguiente contenido (no usar tildes)</h4>
+                <p>
+                    El Ministerio de la Verdad -que en neolengua<sub>1</sub> se le llamaba el Miniver- era diferente, hasta un extremo
+                    asombroso, de cualquier otro objeto que se presentara a la vista. Era una enorme estructura piramidal de
+                    cemento armado blanco y reluciente, que se elevaba, terraza tras terraza, a unos trescientos metros de altura. <br>
+                </p>
+
+                <p id="mitad">
+                    Desde donde Winston se hallaba, podían leerse, adheridas sobre su blanca fachada en letras de elegante
+                    forma, las tres consignas del Partido:
+                </p>
+
+                <blockquote>
+                    <strong>
+                        <span style="text-align: center;">
+                            “LA GUERRA ES LA PAZ <br>
+                            LA LIBERTAD ES LA ESCLAVITUD <br>
+                            LA IGNORANCIA ES LA FUERZA” <br>
+                        </span>
+                    </strong>
+                </blockquote>
+
+                <b>
+                    Se decía que el Ministerio de la Verdad tenía tres mil habitaciones sobre el nivel del suelo y las correspondientes
+                    ramificaciones en el subsuelo. <br>
+                </b>
+
+                <p>
+                    En Londres sólo había otros tres edificios del mismo aspecto y tamaño. Éstos aplastaban de tal manera la
+                    arquitectura de los alrededores que desde el techo de las <b><em>Casas de la Victoria</em></b> se podían distinguir, a la vez, los
+                    cuatro edificios. <br>
+                </p>
+
+                <del>Esto no pega aquí.</del> <br><br>
+
+                En ellos estaban instalados los cuatro Ministerios entre los cuales se dividía todo el sistema gubernamental.
+                
+                <ul id="fin">
+                    <li><b>El Ministerio de la Verdad</b>, que se dedicaba a las noticias, a los espectáculos, la educación y las
+                    bellas artes.</li>
+                    <li><b>El Ministerio de la Paz</b>, para los asuntos de guerra.</li>
+                    <li><b>El Ministerio del Amor</b>, encargado de mantener la ley y el orden.</li>
+                    <li><b>El Ministerio de la Abundancia</b>, al que correspondían los asuntos económicos.</li>
+                </ul>
+
+                Sus nombres, en neolengua: <i>Miniser, Minipax, Minimor y Minindancia.</i>
             </p>
+        </main>
 
-            <p>
-                Desde donde Winston se hallaba, podían leerse, adheridas sobre su blanca fachada en letras de elegante
-                forma, las tres consignas del Partido:
-            </p>
+        <div id="pdf">
+            <h2>Enlaces PDF: redirección, incrustación y modififcación</h2>
+            <a href="https://ontheline.trincoll.edu/images/bookdown/sample-local-pdf.pdf" target="_blank">Abrir sample-local-pdf.pdf</a>
 
-            <blockquote>
-                <strong>
-                    <span style="text-align: center;">
-                        “LA GUERRA ES LA PAZ <br>
-                        LA LIBERTAD ES LA ESCLAVITUD <br>
-                        LA IGNORANCIA ES LA FUERZA” <br>
-                    </span>
-                </strong>
-            </blockquote>
+            <h3>Con <code>&lt;object&gt;</code></h3>
+            <object data="https://ontheline.trincoll.edu/images/bookdown/sample-local-pdf.pdf" type="application/pdf" width="500" height="400">
+                <p>
+                    Tu navegador no puede mostrar el PDF.
+                    <a href="https://ontheline.trincoll.edu/images/bookdown/sample-local-pdf.pdf" download>Descárgalo aquí</a>.
+                </p>
+            </object>
 
-            <b>
-                Se decía que el Ministerio de la Verdad tenía tres mil habitaciones sobre el nivel del suelo y las correspondientes
-                ramificaciones en el subsuelo. <br>
-            </b>
+            <h3>Con <code>&lt;embed&gt;</code></h3>
+            <embed src="https://ontheline.trincoll.edu/images/bookdown/sample-local-pdf.pdf" type="application/pdf" width="500" height="400">
 
-            <p id="mitad">
-                En Londres sólo había otros tres edificios del mismo aspecto y tamaño. Éstos aplastaban de tal manera la
-                arquitectura de los alrededores que desde el techo de las <b><em>Casas de la Victoria</em></b> se podían distinguir, a la vez, los
-                cuatro edificios. <br>
-            </p>
+            <h3>Con <code>&lt;iframe&gt;</code></h3>
+            <iframe src="https://ontheline.trincoll.edu/images/bookdown/sample-local-pdf.pdf" type="application/pdf" width="500" height="400" style="border: none;"></iframe>
 
-            <del>Esto no pega aquí.</del> <br><br>
+            <h3>Modificación de Contenido</h3>
+            <a href="https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf" target="visor">pdf-sample.pdf</a> <br>
+            <a href="https://www.orimi.com/pdf-test.pdf" target="visor">pdf-test.pdf</a> <br>
+            <a href="https://themodernfirm.com/wp-content/uploads/2017/12/Sample-Fillable-PDF.pdf" target="visor">sample-fillable-pdf.pdf</a> <br>
+            <a href="https://example-files.online-convert.com/document/pdf/example.pdf" target="visor">example.pdf</a><br><br>
 
-            En ellos estaban instalados los cuatro Ministerios entre los cuales se dividía todo el sistema gubernamental.
-            
-            <ul id="fin">
-                <li><b>El Ministerio de la Verdad</b>, que se dedicaba a las noticias, a los espectáculos, la educación y las
-                bellas artes.</li>
-                <li><b>El Ministerio de la Paz</b>, para los asuntos de guerra.</li>
-                <li><b>El Ministerio del Amor</b>, encargado de mantener la ley y el orden.</li>
-                <li><b>El Ministerio de la Abundancia</b>, al que correspondían los asuntos económicos.</li>
-            </ul>
+            <iframe name="visor" width="500" height="400"></iframe>
+        </div>
 
-            Sus nombres, en neolengua: <i>Miniser, Minipax, Minimor y Minindancia.</i>
-        </p>
     </div>
 
-    <footer>
-        <a href="https://es.wikipedia.org/wiki/1984_(novela)"></a>
-        <a href="https://es.babelio.com/livres/Orwell-1984/99/critiques"></a>
-        <a href="https://ocw.uca.es/pluginfile.php/1485/mod_resource/content/1/1984.pdf"></a>
-        <a href="https://www.cronicasliterarias.es/?p=6076"></a>
-        <a href="https://www.bbc.com/mundo/articles/c4gkjrpm6j1o"></a>
-    </footer>
+    </div>
+
+        <footer class="navegacion">
+            <div id="enlaces">
+                <h3>Enlaces Remotos</h3>
+                <a href="https://es.wikipedia.org/wiki/1984_(novela)" target="_blank">Para más información</a>
+                <a href="https://es.babelio.com/livres/Orwell-1984/99/critiques" target="_blank">Críticas y opiniones</a>
+                <a href="https://ocw.uca.es/pluginfile.php/1485/mod_resource/content/1/1984.pdf" target="_blank">Libro en PDF</a>
+                <a href="https://www.cronicasliterarias.es/?p=6076" target="_blank">Reseña</a>
+                <a href="https://www.bbc.com/mundo/articles/c4gkjrpm6j1o" target="_blank">Otras recomendaciones</a>
+            </div>
+
+            <div id="correo">
+                <h3>Enlace a Email</h3>
+                <a href="mailto:binta.diopdiop@salduba.es">binta.diopdiop@salduba.es</a>
+            </div>
+
+            <div id="archivos">
+                <h3>Enlaces de Descarga de Archivos</h3>
+                <a href="./assests/files/sample-1.zip" download>Descarga sample-1.zip</a>
+                <a href="./assests/files/sample-2.rar" download>Descarga sample-2.rar</a>
+                <a href="./assests/img/flame_hashira_rengoku.gif" download>Descarga flame_hashira_rengoku.gif</a>
+                <a href="./assests/img/sound_hashira_tengen.gif" download>Descarga sound_hashira_tengen.gif</a>
+                <a href="./assests/img/muichiro.jpg" download>Descarga muichiro.jpg</a>
+                <a href="./assests/img/kanao.jpg" download>Descarga kanao.jpg</a>
+            </div>
+        </footer>
 
 </body>
 </html>
