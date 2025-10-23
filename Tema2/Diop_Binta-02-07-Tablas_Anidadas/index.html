@@ -3,36 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas</title>
+    <title>Tablas Anidadas</title>
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
     
     <div id="cabecera">
         <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-10.png" alt="js-logo" id="logo">
-        <h1>Binta - Tablas</h1>
+        <h1>Binta - Tablas Anidadas</h1>
     </div>
 
     <div id="container">
 
         <div class="card-ejercicio">
             <div class="card-cabecera">
-                <h3>Ejercicio 1. Crea las siguientes tablas básicas usando el formato básico de las tablas</h3>
+                <h3>Ejercicio 0 Ejemplos. Copia y pega los ejemplos que hay en los apuntes y añadele una fila</h3>
+            </div>
+            <div class="card-contenido">
+                1&#41;
+                <table border=”1” rules=”groups”>
+                    <caption>Ventas por secciones</caption>
+                    <thead>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Hardware</td>
+                            <td>Software</td>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <th>39000</th>
+                            <th>27000</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <th>Enero</th>
+                            <td>12000</td>
+                            <td>15000</td>
+                        </tr>
+                        <tr>
+                            <th>Febrero</th>
+                            <td>13000</td>
+                            <td>9000</td>
+                        </tr>
+                        <tr>
+                            <th>Marzo</th>
+                            <td>14000</td>
+                            <td>3000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+
+                2&#41;
+                <table>
+                    <colgroup>
+                        <col style="background-color: gray;">
+                        <col span="2" style="background-color:yellow;">
+                        </colgroup>
+                    <thead>
+                        <tr style="background-color: black; color:white">
+                            <th>País</th>
+                            <th>Capital</th>
+                            <th>Otras ciudades</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>España</th>
+                            <td>Madrid</td>
+                            <td>Barcelona, Zaragoza, Sevilla, Valencia,
+                            Bilbao</td>
+                        </tr>
+                        <tr>
+                            <th>Francia</th>
+                            <td>París</td>
+                            <td>Lyon, Marsella, Nantes, Toulouse</td>
+                        </tr>
+                        <tr>
+                            <th>Portugal</th>
+
+                            <td>Lisboa</td>
+                            <td>Oporto, Coimbra</td>
+                        </tr>
+                        <tr>
+                            <th>Inglaterra</th>
+
+                            <td>Londres</td>
+                            <td>Liverpool, Sunderland, Oxford</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+
+                3&#41;
+                <table>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="2">&nbsp;</td>
+                        <td rowspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                </table>
+
+                <br>
+
+                4&#41;
+                <table>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <table style="background-color: cyan;">
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+                            <table style="background-color: cyan;">
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+                            <table style="background-color: cyan;">
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table style="background-color: cyan;">
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h3>Ejercicio 1. Fusión de celdas: rowspan y colspan. Crea las siguientes tablas</h3>
             </div>
             <div class="card-contenido">
                 a&#41;
                 <table>
                     <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
+                        <td colspan="2">Esta celda tiene un colspan="2"</td>
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
+                        <td>Celda normal</td>
+                        <td>Otra celda</td>
                     </tr>
                 </table>
 
@@ -41,124 +220,97 @@
                 b&#41;
                 <table>
                     <tr>
-                        <td>linea11</td>
-                        <td>linea12</td>
-                        <td>linea13</td>
+                        <td rowspan="2">
+                            Esta celda tiene un rowspan="2", por eso <br>
+                            tiene fusionada la celda de abajo
+                        </td>
+                        <td>Celda normal</td>
                     </tr>
                     <tr>
-                        <td>linea21</td>
-                        <td>linea22</td>
-                        <td>linea23</td>
-                    </tr>
-                    <tr>
-                        <td>linea31</td>
-                        <td>linea32</td>
-                        <td>linea33</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="card-ejercicio">
-            <div class="card-cabecera">
-                <h3>Ejercicio 2. Crea las siguientes tablas.</h3>
-            </div>
-            <div class="card-contenido">
-                a&#41; La primera línea es de cabeceras por eso usa th
-                <table>
-                    <tr>
-                        <th>Cabecera1</th>
-                        <th>Cabecera2</th>
-                        <th>Cabecera3</th>
-                    </tr>
-                    <tr>
-                        <td>línea21</td>
-                        <td>línea22</td>
-                        <td>línea23</td>
-                    </tr>
-                    <tr>
-                        <td>línea31</td>
-                        <td>línea32</td>
-                        <td>línea33</td>
+                        <td>Otra celda normal</td>
                     </tr>
                 </table>
 
                 <br>
 
-                b&#41; Usa Caption para crear la siguiente cabecera.
-                <table>
-                    <caption>Tabla de Prueba</caption>
+                c&#41; Usa el atributo style=”background-color: color” para colorear toda la tabla de un azul y mezcar un
+                colspan y un rowspan
+                <table style="text-align: center; background-color:paleturquoise;">
                     <tr>
-                        <th>Cabecera1</th>
-                        <th>Cabecera2</th>
-                        <th>Cabecera3</th>
+                        <td colspan="2">Linea1Linea2</td>
                     </tr>
                     <tr>
-                        <td>línea21</td>
-                        <td>línea22</td>
-                        <td>línea23</td>
+                        <td>Linea3</td>
+                        <td>Linea4</td>
                     </tr>
                     <tr>
-                        <td>línea31</td>
-                        <td>línea32</td>
-                        <td>línea33</td>
+                        <td>Linea5</td>
+                        <td rowspan="2">Linea6Linea8</td>
+                    </tr>
+                    <tr>
+                        <td>Linea7</td>
                     </tr>
                 </table>
 
                 <br>
 
-                c&#41; Usa thead , tbody y tfooter con el atributo style=”background-color: color”
-                <table id="tabla-semantica">
-                    <caption>Tabla de Prueba</caption>
-                    <thead>
-                        <tr>
-                            <th>Cabecera1</th>
-                            <th>Cabecera2</th>
-                            <th>Cabecera3</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>línea21</td>
-                            <td>línea22</td>
-                            <td>línea23</td>
-                        </tr>
-                        <tr>
-                            <td>línea31</td>
-                            <td>línea32</td>
-                            <td>línea33</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <th>Pie1</th>
-                        <th>Pie2</th>
-                        <th>Pie3</th>
-                    </tfoot>
+                d&#41; Usa el atributo style=”background-color: color” para colorear cada celda con un color “parecido al
+                de la tabla”. (puedes usar irfan para sacar el codigo)
+                <table border="1" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td style="background-color: #ccffcc;">Linea1</td>
+                        <td style="background-color: #ffff00;">Linea2</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" style="background-color: #33ff00;">Linea3</td>
+                        <td rowspan="2" style="background-color: #ccff00;">Linea4<br>Linea6</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td rowspan="2" style="background-color: #ccccff;">Linea5<br>Linea7</td>
+                        <td style="background-color: #ffffcc;">Linea8</td>
+                    </tr>
+                    <tr></tr>
                 </table>
 
                 <br>
 
-                d&#41; Usa con colgroup y col el atributo style=”background-color: color” para crear estas tablas
-                <table>
-                    <colgroup>
-                        <col style="background-color: chartreuse; width: 200px;">
-                        <col style="background-color: lightcyan; width: 10px;">
-                        <col style="background-color: red; width: 150px;">
-                    </colgroup>
+                e&#41; Crea estas tablas con colspan y rowspan
+                <table style="text-align: center;" cellpadding="5">
                     <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
+                        <td>A</td>
+                        <td>B</td>
+                        <td rowspan="3">C</td>
+                        <td>D</td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
+                        <td rowspan="2">E</td>
+                        <td>F</td>
+                        <td>H</td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
+                        <td>J</td>
+                        <td>L</td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <table style="text-align: center;" cellpadding="10">
+                    <tr>
+                        <td colspan="2">A</td>
+                        <td>C</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">E</td>
+                        <td>H</td>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>J</td>
+                        <td>K</td>
+                        <td>L</td>
                     </tr>
                 </table>
             </div>
@@ -167,53 +319,76 @@
         <div class="card-ejercicio">
             <div class="card-cabecera">
                 <h3>
-                    Ejercicio 3. Agrupando filas de una tabla, o columnas. <br>
-                    Crea una tabla de 4x8 (4 columnas 8 filas) y replicala <br>
-                    Utiliza la palabra clave tbody para agrupar filas con estos datos style=”background-color: color”
+                    Ejercicio 2. Crea una tabla con este diseño usando los siguientes estilos css en
+                    <ul>
+                        <li>style=”background-color: color”</li>
+                        <li>style=”width:100px”</li>
+                        <li>style=”width:400px”</li>
+                        <li>style=”width:80%”</li>
+                    </ul>
                 </h3>
             </div>
             <div class="card-contenido">
-                <table id="tabla-agrupada">
-                    <tbody class="tbody1">
-                        <td>1</td>
-                        <td colspan="4">2</td>
-                        <td>3</td>
-                    </tbody>
-                    <tbody class="tbody2">
-                        <td rowspan="2">4</td>
-                        <td colspan="4" rowspan="3">Esta es una celda</td>
-                        <td>6</td>
-                    </tbody>
-                    <tbody class="tbody2">
-                        <td></td>
-                        <td colspan="4">5</td>
-                        <td></td>
-                    </tbody>
-                    <tbody class="tbody2">
-                        <td>7</td>
-                        <td colspan="4">8</td>
-                        <td>9</td>
-                    </tbody>
-                    <tbody class="tbody1">
-                        <td>10</td>
-                        <td colspan="4">11</td>
-                        <td>12</td>
-                    </tbody>
-                    <tbody class="tbody3">
-                        <td  rowspan="2"></td>
-                        <td colspan="4" rowspan="2">Esta es una celda</td>
-                        <td></td>
-                    </tbody>
-                    <tbody class="tbody3">
-                        <td>4</td>
-                        <td colspan="4">5</td>
-                        <td>6</td>
-                    </tbody>
-                    <tbody class="tbody3">
-                        <td>7</td>
-                        <td colspan="4">8</td>
-                        <td>9</td>
-                    </tbody>
+                <table cellpadding="10">
+                    <tr style="background-color: #57ffff">
+                        <td style="width: 100px;" colspan="2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_Logo.png" alt="classroom-logo"
+                            style="width: 40px;">
+                            <h1>Cabecera</h1>
+                        </td>
+                    </tr>
+                    <tr style="background-color: #f1ffff; border: none;">
+                        <td style="text-align: center;">
+                            <a href="#">Enlace1</a>
+                            <a href="#">Enlace2</a>
+                            <a href="#">Enlace3</a>
+                            <a href="#">Enlace4</a>
+                            <a href="#">Enlace5</a>
+                            <a href="#">Enlace6</a>
+                            <a href="#">Enlace7</a>
+                            <a href="#">Enlace8</a>
+                        </td>
+                        <td >
+                            <table style="border: none;" cellpadding="5">
+                                <tr style="border: none;">
+                                    <td style="border: none;">
+                                        <h2>Contenido</h2>
+                                    </td>
+                                <tr style="border: none;">
+                                    <td style="border: none;">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </td>
+                                </tr>
+
+                                <tr style="border: none;">
+                                    <td style="border: none;">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </td>
+                                </tr>
+
+                                <tr style="border: none;">
+                                    <td style="border: none;">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="background-color: #f67e4a;">
+                        <td colspan="2"><h3>Pies</h3></td>
+                    </tr>
                 </table>
             </div>
         </div>

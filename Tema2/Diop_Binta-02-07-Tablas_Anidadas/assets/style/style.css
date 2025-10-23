@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F5E6E8;
+    background-color: #ddcecd;
     scroll-behavior: smooth;
 }
 
@@ -19,7 +19,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
-    background-color: #753c96;
+    background-color: #b1356f;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -30,7 +30,7 @@ body {
 
 #container {
     width: auto;
-    background-color: white;
+    background-color:  #ececec;
     margin: 2.35rem .5rem -.42rem .5rem;
     padding: 1.5rem;
     padding-bottom: 0;
@@ -44,14 +44,15 @@ body {
 }
 
 .card-cabecera {
-    background-color: #967AA1;
+    background-color: #be4e82;
+    color: white;
     padding: .50rem;
     border-radius: 20px 20px 0 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .card-contenido {
-    background-color: #D5C6E0;
+    background-color: #c77d9f;
     padding: 1rem;
     border-radius: 0 0 20px 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -63,8 +64,8 @@ body {
     border-collapse: collapse;
 }
 
-.card-contenido td , th{
-    width: 100px;
+.card-contenido table{
+    width: 100%;
 }
 
 #tabla-semantica thead {
