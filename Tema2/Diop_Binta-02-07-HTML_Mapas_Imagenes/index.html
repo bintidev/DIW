@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapaas de Imágenes</title>
+    <title>Mapas de Imágenes</title>
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
                 </h3>
             </div>
             <div class="card-contenido">
-                <img src="./assets/img/cuadrados.png" title="Pulse en alguno de los cuadrados" usemap="#mapa1">
+                <img src="./assets/img/cuadrados.png" title="Pase el mouse sobre alguno de los cuadrados" usemap="#mapa1">
                 <map name="mapa1">
                     <area shape="rect" coords="12,21,206,67" title="Hardware" href="#">
                     <area shape="rect" coords="250,24,445,69" title="Super Mini" href="#">
@@ -36,14 +36,50 @@
         <div class="card-ejercicio">
             <div class="card-cabecera">
                 <h4>
-                    2. Crea un código html para crear un texto como este usando las etiquetas p, br, b, em ,
-                    strong, h1...h6, q , pre, s y code
+                    Ejercicio 2 Mapa de imágenes Circulos. Crea las siguientes tablas
+                    Realiza un mapa de imágenes con 4 circulos con esta imagen
                 </h4>
             </div>
             <div class="card-contenido">
+                <img src="./assets/img/circulos.png" title="Pase el ratón por encima de alguno de los botones" usemap="#mapa2">
+                <map name="mapa2">
+                    <area shape="circle" coords="119,90,27" title="Rojo" href="#">
+                    <area shape="circle" coords="191,89,27" title="Azul" href="#">
+                    <area shape="circle" coords="263,91,27" title="Verde" href="#">
+                    <area shape="circle" coords="331,90,27" title="Amarillo" href="#">
+                </map>
+            </div>
+
+            <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 3 Mapa de imágenes Poly. Realiza un mapa de imágenes usando polígonos para cada
+                    región de Málaga con esta imagen que direcciones a un recurso relacionado con cada comarca.
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <img src="./assets/img/mapa-malaga.png" title="Pase el ratón por encima de alguna de las regiones" usemap="#mapa3">
+                <map name="mapa3">
+                    <area shape="poly" coords="111, 137, 134, 154, 155, 131, 193, 141, 201, 154, 203, 173, 175, 187, 169, 206, 141, 247, 133, 243, 122, 259, 106, 248, 87, 276, 64, 239, 47, 254, 19, 238, 60, 229, 61, 209, 74, 214, 104, 170, 87, 153"
+                    title="Ronda" href="https://www.turismoderonda.es/"/>
+                    <area shape="poly" coords="89, 270, 106, 247, 121, 255, 132, 248, 170, 207, 199, 213, 202, 223, 221, 227, 266, 219, 299, 212, 288, 235, 270, 235, 264, 254, 232, 264, 189, 252, 170, 272, 142, 277, 111, 311, 92, 302, 86, 265"
+                    title="Costa Occidental" href="https://www.malaga.es/es/laprovincia/localizacion/3325/costa-del-sol-occidental?cnl=76"/>
+                    <area shape="poly" coords="149, 93, 182, 83, 202, 63, 191, 50, 204, 48, 214, 43, 229, 55, 250, 45, 241, 28, 275, 26, 275, 42, 295, 41, 319, 21, 332, 27, 327, 35, 342, 47, 352, 70, 356, 102, 335, 120, 325, 132, 268, 138, 230, 126, 226, 144, 197, 152, 185, 137, 152, 130, 141, 99"
+                    title="Antequera" href="https://turismo.antequera.es/"/>
+                    <area shape="poly" coords="171, 194, 189, 174, 202, 174, 202, 150, 225, 147, 232, 130, 250, 126, 269, 142, 267, 164, 279, 178, 277, 189, 264, 202, 262, 220, 214, 232, 193, 222, 188, 212, 166, 201"
+                    title="Valle de Guadalhorce" href="https://www.malaga.es/es/laprovincia/localizacion/4261/valle-del-guadalhorce?cnl=136"/>
+                    <area shape="poly" coords="269, 136, 325, 133, 341, 148, 355, 157, 341, 195, 314, 193, 303, 215, 271, 224, 261, 215, 264, 198, 277, 191, 265, 159"
+                    title="Málaga" href="https://www.spain.info/es/destino/malaga/"/>
+                    <area shape="poly" coords="361, 97, 379, 119, 396, 121, 409, 137, 432, 139, 439, 147, 451, 150, 476, 167, 473, 183, 431, 192, 399, 183, 391, 190, 341, 194, 353, 158, 345, 150, 327, 130, 333, 115, 343, 111"
+                    title="La Axarquía" href="https://axarquiacostadelsol.es/la-axarquia/"/>
+                </map>
             </div>
         </div>
     
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="imageMapResizer.min.js"></script>
+        <script>$(document).ready(function(e){$("map").imageMapResize();});</script>
 
 </body>
 </html>
