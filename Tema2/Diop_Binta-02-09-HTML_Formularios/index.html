@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+
+    <div id="cabecera">
+        <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-10.png" alt="js-logo" id="logo">
+        <h1>Binta - Formularios y Etiquetas Input</h1>
+    </div>
+    
+    <div id="container">
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h3>
+                    1. Escribe en un documento htm con el titulo <em>formularios</em> y con tus palabras en que consiste el 
+                    funcionamiento de los formularios
+                </h3>
+            </div>
+            <div class="card-contenido">
+                <p>
+                    Los formularios se usan para recoger información del usuario, la cual será validada,
+                    para luego proceder al envío de estos datos a un servicio que los procese adecuadamente
+                </p>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h3>
+                    2. Escribe en un documento htm con el titulo <em>GET/POST</em> y con tus palabras en que consiste el paso 
+                    de datos mediante GET y post y las ventajas de cada uno
+                </h3>
+            </div>
+            <div class="card-contenido">
+                <ul>
+                    <li>
+                        <b>GET.</b> Es un comando que realiza una petición URL,
+                        enviando los datos en esta misma.
+                    </li>
+
+                    <ul>
+                        <li>Ventajas</li>
+                        <ol>
+                            <li>
+                                Las páginas generadas con GET pueden añadirse a
+                                marcadores o favoritos del navegador y páginas de
+                                marcadores
+                            </li>
+                            <li>
+                                Almacenamiento en caché y mejora del rendimiento
+                            </li>
+                        </ol>
+                    </ul>
+
+                    <li>
+                        <b>POST.</b> Es otro comando de petición URL, pero en este caso
+                        los datos se envían dentro del paquete.
+                    </li>
+
+                    <ul>
+                        <li>Ventajas</li>
+                        <ol>
+                            <li>
+                                Al enviarse los datos en el paquete y no en la URL,
+                                por lo que no son visibles y eso lo hace más seguro y discreto
+                            </li>
+                            <li>
+                                No hay un límite del tamaño de datos, por lo que es la
+                                mejor opción para subir archivos grandes o formularios
+                                largos
+                            </li>
+                        </ol>
+                </ul>
+            </div>
+        </div>
+
+            <div class="card-ejercicio">
+                <div class="card-cabecera">
+                    <h3>
+                        3. Escribe en un documento htm con el  titulo <em>atributos</em> una lista de definición que explique cada 
+                        atributo.
+
+                        <ul>
+                            <li>accept-charset</li>
+                            <li>autocomplete</li>
+                            <li>enctype</li>
+                            <li>novalidate</li>
+                            <li>target</li>
+                        </ul>
+                    </h3>
+                </div>
+                <div class="card-contenido">
+                    <p>
+                        <dl><mark>accept-charset</mark></dl>
+                        <dd>
+                            Codificación de caracteres que se utilizará para pasar los contenidos del formulario, por 
+                            ejemplo ISO-8859-1.
+                        </dd>
+
+                        <dl><mark>autocomplete</mark></dl>
+                        <dd>
+                            Toma valores <code>on</code> u <code>off</code>. Si se activa, el navegador completa
+                            automáticamente los datos del formulario basándose en los valores para estos mismos que
+                            el usuario haya rellenado en otros formularios.
+                        </dd>
+
+                        <dl><mark>enctype</mark></dl>
+                        <dd>
+                            Solo válido para el método POST. Indica el formato en el que los datos del formulario son
+                            enviados.
+                        </dd>
+
+                        <dl><mark>novalidate</mark></dl>
+                        <dd>
+                            Con este atributo los datos que normalmente validaría HTML5, se ignoran y, por consecuente,
+                            no se validan.
+                        </dd>
+
+                        <dl><mark>target</mark></dl>
+                        <dd>
+                            Igual al atributo de la etiqueta <code>&lt;a&gt;</code>. Si se usa el valor <code>_blank</code>,
+                            el formulario se abre en otra ventana.
+                        </dd>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-ejercicio">
+                <div class="card-cabecera">
+                    <h3>
+                        4. Escribe en un documento htm con el  caption <em>atributos text</em> una tabla de ordenada que explique 
+                        cada atributo del en 3/4 palabras
+                    </h3>
+                </div>
+                <div class="card-contenido">
+                    <table cellpadding = "5">
+                        <tr>
+                            <td>type</td>
+                            <td>tipo de control</td>
+                            <td>form</td>
+                            <td>Identificador del formulario de un control</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>Nombre de un control</td>
+                            <td>formnovalidated</td>
+                            <td>Control no validado</td>
+                        </tr>
+                        <tr>
+                            <td>size</td>
+                            <td>Tamaño en caracteres</td>
+                            <td>maxlength</td>
+                            <td>Máximo caracteres admitidos</td>
+                        </tr>
+                        <tr>
+                            <td>value</td>
+                            <td>Valor de elemento</td>
+                            <td>id</td>
+                            <td>Identificador de elemento</td>
+                        </tr>
+                        <tr>
+                            <td>disabled</td>
+                            <td>Control no editable</td>
+                            <td>readonly</td>
+                            <td>Control solo lectura</td>
+                        </tr>
+                        <tr>
+                            <td>autocomplete</td>
+                            <td>Relleno automático</td>
+                            <td>required</td>
+                            <td>Rellenado obligatorio</td>
+                        </tr>
+                        <tr>
+                            <td>autofocus</td>
+                            <td>Foco sobre elemento</td>
+                            <td>pattern</td>
+                            <td>Validación por patrón</td>
+                        </tr>
+                        <tr>
+                            <td>disabled</td>
+                            <td>Control deshabilitado</td>
+                            <td>placeholder</td>
+                            <td>Texto de ayuda</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card-ejercicio">
+                <div class="card-cabecera">
+                    <h3>
+                        5. Escribe en un documento htm con el titulo <em>formulario</em> . Crea un form con get e introduce los 
+                        siguientes controles. El id debe tener el mismo nombre que el label que contenga
+                    </h3>
+                </div>
+                <div class="card-contenido">
+                    <p>
+                        <a href="./formulario.html" target="_blank">Ir al formulario</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-ejercicio">
+                <div class="card-cabecera">
+                    <h3>
+                        6. Escribe en un documento htm con el  titulo <em>atributos button</em> una lista de ordenada que explique 
+                        cada atributo.
+                    </h3>
+                </div>
+                <div class="card-contenido">
+                    <ol>
+                        <li><span>formaction</span>
+
+                            <ul>
+                                <li>
+                                    Indica el servicio al que se enviarán los datos del formulario.
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li><span>formethod</span>
+
+                            <ul>
+                                <li>
+                                    Indica el método de paso de los datos (GET o POST).
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><span>formenctype</span>
+
+                            <ul>
+                                <li>
+                                    Indica la forma de codificaciónd de los datos.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><span>formnovalidate</span>
+
+                            <ul>
+                                <li>
+                                    Los datos que se envían no se validan.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><span>formtarget</span>
+
+                            <ul>
+                                <li>
+                                    Indica el destino de muestra por pantalla de los datos.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

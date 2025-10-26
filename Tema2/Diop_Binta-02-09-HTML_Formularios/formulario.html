@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 - Formulario</title>
+    <link rel="stylesheet" href="./assets/style/formulario-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="contenedor">
+
+        <form action="" method="GET">
+
+            <div id="wrapper">
+                <h1>Formulario Ejercicio 5</h1>
+
+                <div class="form-control">
+                    <label for="nombre">Nombre</label> <br>
+                    <input type="text" name="nombre" id="nombre" placeholder="Requerido"
+                    pattern="[a-zA-Z]+" required autofocus>
+                </div>
+
+                <div class="form-control">
+                    <label for="apellidos">Apellidos</label> <br>
+                    <input type="text" name="apellidos" id="apellidos" pattern="[a-zA-Z]+ " 
+                    placeholder="Requerido" required>
+                </div>
+
+                <div class="form-control">
+                    <label for="edad">Edad</label> <br>
+                    <input type="text" name="edad" id="edad" pattern="[0-9]{2}"
+                    placeholder="Requerido" required>
+                </div>
+
+                <div class="form-control">
+                    <label for="psswd">Contraseña</label> <br>
+                    <input type="password" name="psswd" id="psswd" size="5" placeholder="Tamaño max. 5">
+                </div>
+
+                <div class="form-control">
+                    <input type="hidden" name="edad" id="edad">
+                </div>
+
+                <div class="form-control" id="input-radio">
+                    <input type="radio" name="btn-radio" id="btn-radio1" value="radio1">
+                    <label for="btn-radio1">Buen día &lt;3</label>
+
+                    <input type="radio" name="btn-radio" id="btn-radio2" value="radio2">
+                    <label for="btn-radio2">Muy buen día!!</label>
+                </div>
+
+                <div class="form-control" id="input-check">
+                    <input type="checkbox" name="btn-check1" id="btn-check1" value="check1">
+                    <label for="btn-check1">Gatos 🐱</label>
+
+                    <input type="checkbox" name="btn-check2" id="btn-check2" value="check2">
+                    <label for="btn-check2">Perros 🐶</label>
+
+                    <input type="checkbox" name="btn-check2" id="btn-check2" value="check2">
+                    <label for="btn-check2">Hamsters 🐹</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="submit" id="btn-envio">
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
