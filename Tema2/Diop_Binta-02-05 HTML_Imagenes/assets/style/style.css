@@ -15,11 +15,12 @@ body {
     height: 55px;
     top: 0;
     left: 0;
-    padding: 10px;
+    padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
     background-color: #E0AFA0;
+    font-size: 22px;
 }
 
 #logo {
@@ -30,7 +31,7 @@ body {
 #container {
     width: auto;
     background-color: white;
-    margin: 2.35rem .5rem -.42rem .5rem;
+    margin: 4rem .5rem -.42rem .5rem;
     padding: 1.5rem;
     padding-bottom: 0;
 }
@@ -43,18 +44,19 @@ body {
 }
 
 .card-cabecera {
-    background-color: #BCB8B1;
-    padding: .50rem;
+    background-color: #e6e0d6;
+    padding: 1.50rem;
     border-radius: 20px 20px 0 0;
+    color: #d68066;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .card-contenido {
-    background-color: #e9e5dd;
+    background-color: #f3efe7;
     padding: 1rem;
     border-radius: 0 0 20px 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 13.5px;
+    font-size: 15px;
 }
 
 .card-contenido img {
@@ -74,9 +76,9 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
- 
+
     #container {
-        width: 50%;
+        width: 65%;
     }
     
 }

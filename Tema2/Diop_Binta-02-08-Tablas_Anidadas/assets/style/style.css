@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ddcecd;
+    background-color: #ffeef9;
     scroll-behavior: smooth;
 }
 
@@ -15,12 +15,12 @@ body {
     height: 55px;
     top: 0;
     left: 0;
-    padding: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
     background-color: #b1356f;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
 }
 
 #logo {
@@ -30,8 +30,8 @@ body {
 
 #container {
     width: auto;
-    background-color:  #ececec;
-    margin: 2.35rem .5rem -.42rem .5rem;
+    background-color:  #ffffff;
+    margin: 4rem .5rem -.42rem .5rem;
     padding: 1.5rem;
     padding-bottom: 0;
 }
@@ -44,19 +44,19 @@ body {
 }
 
 .card-cabecera {
-    background-color: #be4e82;
+    background-color: #be6a91;
     color: white;
-    padding: .50rem;
+    padding: 1.50rem;
     border-radius: 20px 20px 0 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .card-contenido {
-    background-color: #c77d9f;
+    background-color: #c79fb1;
     padding: 1rem;
     border-radius: 0 0 20px 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 13.5px;
+    font-size: 15px;
 }
 
 .card-contenido table, tr, td, th {
@@ -103,7 +103,7 @@ body {
 @media screen and (min-width: 1000px) {
  
     #container {
-        width: 50%;
+        width: 65%;
     }
     
 }
