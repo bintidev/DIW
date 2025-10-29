@@ -4,24 +4,24 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     scroll-behavior: smooth;
-    height: 100vh;
+    height: 100%;
 }
 
 #contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     margin: 10rem 0 10rem 0;
 }
 
 form {
-    width: 50rem;
+    width: 30rem;
     background: transparent;
     backdrop-filter: blur(15px);
     border: solid 5px #e4438b49;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 18px;
     padding: 35px;
 }
 
@@ -29,22 +29,32 @@ form {
 h1 {
     font-family: "Lexend", sans-serif;
     color: #67af91;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
 }
 
 .form-control {
     font-family: "Red Hat Display", sans-serif;
-    margin: 20px;
+    margin: 25px;
 }
 
 .form-control input {
     border-radius: 15px;
     padding: 10px;
     border: none;
-    width: auto;
+    width: 15rem;
     background-color: #e4e4e4;
 }
+
+.form-control input::placeholder {
+    font-family: "Red Hat Display", sans-serif;
+
+}
+
+    .form-control input:hover {
+        background-color: #ff93c294;
+        transition-duration: .5s;
+    }
 
     .form-control input:focus {
         outline: solid 1px #e4438b;
@@ -52,20 +62,26 @@ h1 {
         transition-duration: .5s;
     }
 
-#input-readio, #input-check {
-    display: flex;
-    width: 0;
+.form-control input[type="radio"] {
+    width: auto;
+    margin: 10.5px;
+}
+
+#btn-check1, #btn-check2 {
+    width: auto;
+    margin: 10.5px;
 }
 
 #btn-envio {
     outline: solid 1px #e4438b;
     background-color: #ffcae1;
     color: #e4438b;
+    width: 10.5rem;
 }
 
     #btn-envio:hover {
-        outline: solid 1px #ffcae1;
+        outline: none;
         background-color: #e4438b;
-        color: #ffcae1;
+        color: white;
         transition: .5s;
     }

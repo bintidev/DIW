@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Formulario</title>
+    <link rel="stylesheet" href="../assets/style/formulario-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="contenedor">
+
+        <div id="wrapper">
+            <form action="" method="GET">
+                    <h1>Formulario Ejercicio 7</h1>
+
+                    <div class="form-control">
+                        <label for="frase">Cita preferida</label> <br>
+                        <input type="text" name="frase" id="frase" placeholder="Frase o palabras que te motiven!" required autofocus>
+                    </div>
+
+                    <div class="form-control" id="input-radio">
+                        <p>Mi estación favorita:</p>
+                        <div>
+                            <input type="radio" name="btn-radio" id="btn-radio1" value="radio1">
+                            <label for="btn-radio1">Invierno ❄️</label> <br>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="btn-radio" id="btn-radio2" value="radio2">
+                            <label for="btn-radio2">Verano ☀️</label> <br>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="btn-radio" id="btn-radio3" value="radio3">
+                            <label for="btn-radio3">Otoño 🍂</label> <br>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="btn-radio" id="btn-radio4" value="radio4">
+                            <label for="btn-radio4">Primavera 🌹</label>
+                        </div>
+                    </div>
+
+                    <div class="form-control" id="input-check">
+                            <p>Hoy me siento...</p>
+                            <input type="checkbox" name="btn-check1" id="btn-check1" value="check1">
+                            <label for="btn-check1">Animado/a!!</label>
+
+                            <input type="checkbox" name="btn-check2" id="btn-check2" value="check2">
+                            <label for="btn-check2">Bien, no me quejo :D</label>
+                    </div>
+
+                    <div class="form-control">
+                        <input type="file" name="archivo">
+                    </div>
+
+                    <div class="form-control">
+                        <input type="submit" id="btn-envio">
+                    </div>
+                
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

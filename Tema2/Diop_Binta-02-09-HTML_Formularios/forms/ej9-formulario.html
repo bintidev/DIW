@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 - Formulario</title>
+    <link rel="stylesheet" href="../assets/style/formulario-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="contenedor">
+
+        <div id="wrapper">
+            <form action="" method="GET">
+                    <h1>Realice su reserva</h1>
+
+                    <div class="form-control">
+                        <label for="nombre">Nombre y apellidos del reservista</label> <br>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese un nombre" required autofocus>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="reservas">Cantidad de reservas</label> <br>
+                        <input type="number" name="reservas" id="reservas" min=2 placeholder="" required>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="telefono">Teléfono</label> <br>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Especifique el prefijo" required>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="email">Email</label> <br>
+                        <input type="email" name="email" id="email" placeholder="Dirección de correo electrónico" required>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="fecha">Fecha de la reserva</label> <br>
+                        <input type="date" name="fecha" id="fecha" required>
+                    </div>
+
+                    <div class="form-control" id="input-radio">
+                        <p>Tramos horarios:</p>
+                        <div>
+                            <input type="radio" name="btn-radio" id="btn-radio1" value="radio1">
+                            <label for="btn-radio1">9:15 - 10:15</label> <br>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="btn-radio" id="btn-radio2" value="radio2">
+                            <label for="btn-radio2">13:30 - 14:30</label> <br>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="btn-radio" id="btn-radio3" value="radio3">
+                            <label for="btn-radio3">17:55 - 18:55</label> <br>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="btn-radio" id="btn-radio4" value="radio4">
+                            <label for="btn-radio4">21:15 - 22:15</label> <br>
+                        </div>
+                    </div>
+
+                    <div class="form-control">
+                        <input type="submit" id="btn-envio">
+                    </div>
+                
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

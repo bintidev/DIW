@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 - Formulario</title>
+    <link rel="stylesheet" href="../assets/style/formulario-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="contenedor">
+
+        <div id="wrapper">
+            <form action="" method="GET">
+                    <h1>Personalización</h1>
+
+                    <div class="form-control">
+                        <label for="tematica">Temática</label> <br>
+                        <input type="text" name="tematica" id="tematica" placeholder="Ingrese la temática del formulario" autofocus>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="color-ajuste">Color</label>
+                        <input type="color" name="color-ajuste" id="color-ajuste" value="radio1"> <br>
+                    </div>
+
+                    <div class="form-control">
+                        <p>Ajustes de Color</p>
+                        <label for="color-ajuste">Nivel de contraste</label> <br>
+                        <input type="range" name="color-ajuste" id="color-ajuste" value="radio1"
+                        min="-100" max="100"> <br>
+
+                        <label for="color-ajuste">Nivel de brillo</label> <br>
+                        <input type="range" name="color-ajuste" id="color-ajuste" value="radio1"
+                        min="-100" max="100">
+                    </div>
+
+                    <div class="form-control">
+                        <input type="submit" id="btn-envio">
+                    </div>
+                
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
