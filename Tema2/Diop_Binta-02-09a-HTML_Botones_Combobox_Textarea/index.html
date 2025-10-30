@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones. Combobox y Textareas</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+
+    <div id="cabecera">
+        <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-10.png" alt="js-logo" id="logo">
+        <h1>Binta - Botones</h1>
+    </div>
+    
+    <div id="container">
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h2>
+                    Ejercicio 1. Crea  un botón moderno Con un texto que diga "Gracias por pulsarme" con este 
+                    evento  onclick="alert(' Gracias por pulsarme');"
+                </h2>
+            </div>
+            <div class="card-contenido">
+                <button onclick="alert('Gracias por pulsarme')">Púlsame</button>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h2>
+                    Ejercicio 2. Crea  un botón moderno con una imagen png. Ojo para que quede asi debes modificar 
+                    la propiedad css de alineación del texto
+                </h2>
+            </div>
+            <div class="card-contenido">
+                <button style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                    Pulsa Aquí
+                    <img src="./assets/img/diana.png" width="30px">
+                </button>
+            </div>
+        </div>
+
+            <div class="card-ejercicio">
+                <div class="card-cabecera">
+                    <h2>
+                        Ejercicio 3. Crea un cuadro combinado como los de la imagen
+                    </h2>
+                </div>
+                <div class="card-contenido">
+                    <h4>Seleccione su pueblo <br> Blanco de Málaga</h4>
+                    <select>
+                        <option value="">Benaoján</option>
+                        <option value="">Montejaque</option>
+                        <option value="">Atajate</option>
+                        <option value="">Jimera de Libar</option>
+                        <option value="">Benadalid</option>
+                        <option value="">Algatocín</option>
+                        <option value="">Gaucín</option>
+                        <option value="">Zamora</option>
+                    </select>
+                    <button>Enviar</button>
+                </div>
+            </div>
+
+            <div class="card-ejercicio">
+                <div class="card-cabecera">
+                    <h2>
+                        Ejercicio 4. Crea un cuadro combinado como los de la imagen
+                    </h2>
+                </div>
+                <div class="card-contenido">
+                    <select>
+                        <optgroup label="Málaga">
+                            <option value="">Benaoján</option>
+                            <option value="">Montejaque</option>
+                            <option value="">Atajate</option>
+                            <option value="">Jimera de Libar</option>
+                            <option value="">Benadalid</option>
+                            <option value="">Algatocín</option>
+                            <option value="">Gaucín</option>
+                        </optgroup>
+
+                        <optgroup label="Cádiz">
+                            <option value="">Arcos de la frontera</option>
+                            <option value="">Bornos</option>
+                            <option value="">Algodonales</option>
+                            <option value="">Villamartin</option>
+                            <option value="">Olvera</option>
+                        </optgroup>
+                    </select>
+                    <button>Enviar</button>
+                </div>
+            </div>
+
+            <div class="card-ejercicio">
+                <div class="card-cabecera">
+                    <h2>
+                        Ejercicio 5. Crea un  Cuadro de texto multilínea con estas características : El cuadro debe 
+                        adquirir el foco en cuanto carga la página. Con un tamaño maximo de 50 caracteres y 
+                        anchura 10 columnas y 5 filas Debe tener de placeholder la cadena "Escribe tus 
+                        impresiones" y debe ser obligatorios
+
+                    </h2>
+                </div>
+                <div class="card-contenido">
+                    <textarea autofocus maxlength="50" rows="5" cols="10"
+                    placeholder="Escribe tus impresiones" required></textarea>
+                </div>
+            </div>
+
+            <div class="card-ejercicio">
+                <div class="card-cabecera">
+                    <h2>
+                        Ejercicio 6. Todo junto crea un formulario con este aspecto con estas especificaciones
+                        <ul>
+                            <li>Botones: usar type="submit", reset, button y atributos disabled / autofocus.</li>
+                            <li>Progress: mostrar barra de progreso estática (ej. 70/100) y dentro de un formulario.</li>
+                            <li>Meter: representar valores medidos (ej. batería, ocupación) con min/max/low/high.</li>
+                            <li>Fieldset + legend: agrupar controles de un formulario y deshabilitar grupos.</li>
+                            <li>Datalist: sugerencias para un &lt;input&gt; (autocomplete local).</li>
+                            <li>Textarea: atributos maxlength, rows, cols, placeholder, wrap.</li>
+                            <li>select + option (y optgroup): selección simple y múltiple, value por defecto.</li>
+                            <li>Output: mostrar un resultado predefinido (sin cálculo JS) y uso en formulario para enviar 
+                            un valor.</li>
+                        </ul>
+                    </h2>
+                </div>
+                <div class="card-contenido">
+                    <a href="">
+                        <button>Formulario 1</button>
+                    </a>
+                    <a href="">
+                        <button>Formulario 2</button>
+                    </a>
+                    <a href="">
+                        <button>Formulario 3</button>
+                    </a>
+                    <a href="">
+                        <button>Formulario 4</button>
+                    </a>
+                    <a href="">
+                        <button>Formulario 5</button>
+                    </a>
+                    <a href="">
+                        <button>Formulario 6</button>
+                    </a>
+                    <a href="">
+                        <button>Formulario 7</button>
+                    </a>
+                    <a href="">
+                        <button>Formulario 8</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
