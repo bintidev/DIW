@@ -350,26 +350,30 @@
                     <table style="width: 80%; margin-left: auto; margin-right: auto;border: red 1px solid;">
                         <tr>
                             <td>
-                                <h2>Escoge el sistema de envío</h2>
+                                <form>
+                                    <h2>Escoge el sistema de envío</h2>
 
-                                <td>
-                                    <form action="">
-                                        <td style="border: red 1px solid;  text-align: center;">
-                                            <label for="buscar">Buscar archivo:</label>
-                                            <input type="search" name="buscar" id="buscar" placeholder="Web a Buscar"> <br>
-                                        </td>
+                                    <table>
+                                        <tr>
+                                            <td style="border: red 1px solid;  text-align: center;">
+                                                <label for="buscar">Buscar archivo:</label>
+                                                <input type="search" name="buscar" id="buscar" placeholder="Web a Buscar"> <br>
+                                            </td>
 
-                                        <td style="border: blue 1px solid;  text-align: center;">
-                                            <label for="subir">Subir fichero</label>
-                                            <input type="file" name="subir" id="subir">
-                                        </td>
+                                            <td style="border: blue 1px solid;  text-align: center;">
+                                                <label for="subir">Subir fichero</label>
+                                                <input type="file" name="subir" id="subir">
+                                            </td>
 
-                                        <td style="border: red 1px solid;  text-align: center;">
-                                            <label for="sexo">Escoger web:</label>
-                                            <input type="radio" name="sexo" value="h">
-                                        </td>
-                                    </form>
-                                </td>
+                                            <td style="border: red 1px solid;  text-align: center;">
+                                                <label for="sexo">Escoger web:</label>
+                                                <input type="radio" name="sexo" value="h">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <input type="submit" value="Enviar">
+                                </form>
                             </td>
                         </tr>
                     </table>
