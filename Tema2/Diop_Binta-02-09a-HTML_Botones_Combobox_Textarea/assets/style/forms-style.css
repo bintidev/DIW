@@ -1,0 +1,56 @@
+
+body {
+    background-image: url(https://img.freepik.com/premium-vector/flat-landscape-beautiful-natural-mountain-lake-morning_205077-2550.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: auto;
+    padding: 100px;
+    background: transparent;
+    backdrop-filter: blur(12px);
+    border: solid 10px #6d2e4625;
+    border-radius: 50px;
+    color: #30141f;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+form h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 30px #ac0042;
+}
+
+form input, select, textarea, button {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 7.5px;
+    background-color: #e2b8bd80;
+    border: none;
+    outline: none;
+
+    &:hover {
+        background-color: #e2b8bd;
+        transition: .3s;
+    }
+
+    &:focus {
+        background-color: #dab4c2;
+        border: solid 1px #30141f;
+        transition: .3s;
+    }
+
+    &::placeholder {
+        color: #30141f;
+        font-size: 18px;
+    }
+}

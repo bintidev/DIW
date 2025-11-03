@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+    <link rel="stylesheet" href="../assets/style/forms-style.css">
+</head>
+<body>
+    
+    <div>
+
+        <form>
+
+            <h1>4. Grupos de control (`&lt;fieldset&gt;`)</h1>
+
+            <fieldset>
+                <legend>Grupo de controles</legend> <br>
+
+                <label for="txt">Ingrese un texto:</label> <br>
+                <input id="txt" type="text" name="text" placeholder="Texto"> <br><br>
+
+                <label for="num">Ingrese número:</label> <br>
+                <input type="number" id="num" name="num" placeholder="Del 1 al 100"> <br><br>
+
+                <label for="seleccion">Seleccione una opcion</label>
+                <select id="seleccion" name="seleccion">
+                    <option value="uno">Opcion 1</option>
+                    <option value="dos">Opcion 2</option>
+                    <option value="tres">Opcion 3</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <fieldset disabled="disabled">
+                <legend>Grupo deshabilitado</legend>
+
+                <label for="areatxt">Cuéntame algo interesante:</label> <br>
+                <textarea name="areatxt" id="areatxt" cols="60" rows="5">Holaa :D</textarea> <br><br>
+
+                <label for="opcion">Selecciona una opción:</label> <br>
+
+                <input type="radio" name="opcion" id="radio1">
+                <label for="radio1">Opción chula</label>
+
+                <input type="radio" name="opcion" id="radio2">
+                <label for="radio2">Opción aburrida</label>
+            </fieldset>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

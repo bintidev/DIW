@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 8</title>
+    <link rel="stylesheet" href="../assets/style/forms-style.css">
+</head>
+<body>
+    
+    <div>
+
+        <form oninput="subtotal.value = parseFloat(precio.value)">
+
+            <h1>8. Resultado (`&lt;output&gt;`)</h1>
+
+            <fieldset>
+                <legend>Resumen de pedido (ejemplo)</legend> <br>
+
+                <label for="items">Items</label> <br>
+                <input type="number" name="items" placeholder="Cantidad de artículos"> <br><br>
+
+                <label for="precio">Precio total (EUR)</label> <br>
+                <input type="number" name="precio" placeholder="Precio en euros" step="0.1"> <br><br>
+
+                <label for="subtotal">Subtotal</label> <br>
+                <output name="subtotal" for="precio" id="subtotal"></output> <br>
+
+            </fieldset> <br>
+
+            <input type="submit" value="Enviar pedido">
+
+        </form>
+
+    </div>
+
+</body>
+</html>

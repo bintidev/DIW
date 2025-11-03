@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 2</title>
+    <link rel="stylesheet" href="../assets/style/forms-style.css">
 </head>
 <body>
     
@@ -11,15 +12,19 @@
 
         <form>
 
-            <h1>1. Barra de progreso (`&lt;progress&gt;`)</h1>
+            <h1>2. Barra de progreso (`&lt;progress&gt;`)</h1>
 
             <label for="subida">Subida de archivo (simulada)</label> <br>
-            <input type="text" name="subida" placeholder="Ej.: Ana"> <br>
+            <progress max="100" value="70" id="subida"></progress>
 
-            <button>Enviar (submit)</button>
-            <button type="reset">Limpiar (reset)</button>
-            <button disabled="disabled">Botón deshabilitado</button>
-            <button autofocus>Atención (autofocus)</button>
+            <br>
+
+            <p>Progreso: 70% (valor: 70 / max: 100)</p>
+
+            <hr>
+
+            <label for="progInd">Progreso indeterminado</label> <br>
+            <progress id="progInd"></progress>
 
         </form>
 
