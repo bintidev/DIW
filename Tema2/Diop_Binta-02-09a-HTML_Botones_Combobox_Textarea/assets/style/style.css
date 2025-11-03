@@ -59,7 +59,7 @@ body {
     font-size: 15px;
 }
 
-.card-contenido button, select {
+.card-contenido button, select, input {
     background-color: transparent;
     border: solid 1px #A26769;
     width: auto;
