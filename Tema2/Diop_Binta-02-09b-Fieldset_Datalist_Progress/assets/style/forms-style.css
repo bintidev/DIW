@@ -1,10 +1,10 @@
 body {
-    background-image: url(https://static.vecteezy.com/system/resources/previews/068/305/334/non_2x/green-rolling-hills-with-pink-flowers-and-pastel-sky-nature-landscape-free-vector.jpg);
+    background: #F8FFDB;
+    background: linear-gradient(315deg,rgba(248, 255, 219, 1) 50%, rgba(255, 231, 231, 1) 68%, rgba(255, 100, 100, 1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    scroll-behavior: smooth;
-    height: 100%;
+    min-height: 100vh;
 }
 
 #contenedor {
@@ -19,7 +19,7 @@ form {
     width: 30rem;
     background: transparent;
     backdrop-filter: blur(15px);
-    border: solid 5px #e4438b49;
+    border: solid 5px #FF646449;
     border-radius: 20px;
     font-size: 18px;
     padding: 35px;
@@ -28,7 +28,7 @@ form {
 
 h1 {
     font-family: "Lexend", sans-serif;
-    color: #67af91;
+    color: #FF6464;
     font-size: 40px;
     text-align: center;
 }
@@ -38,38 +38,27 @@ h1 {
     margin: 25px;
 }
 
-.form-control input {
+input {
     border-radius: 15px;
     padding: 10px;
     border: none;
     width: 15rem;
     background-color: #e4e4e4;
-}
 
-.form-control input::placeholder {
-    font-family: "Red Hat Display", sans-serif;
+    &::placeholder {
+        font-family: "Red Hat Display", sans-serif;
+    }
 
-}
-
-    .form-control input:hover {
+    &:hover {
         background-color: #ff93c294;
         transition-duration: .5s;
     }
 
-    .form-control input:focus {
+    &:focus {
         outline: solid 1px #e4438b;
         background-color: #ffcae1;
         transition-duration: .5s;
     }
-
-.form-control input[type="radio"] {
-    width: auto;
-    margin: 10.5px;
-}
-
-#btn-check1, #btn-check2 {
-    width: auto;
-    margin: 10.5px;
 }
 
 #btn-envio {
@@ -77,11 +66,11 @@ h1 {
     background-color: #ffcae1;
     color: #e4438b;
     width: 10.5rem;
-}
 
-    #btn-envio:hover {
+    &:hover {
         outline: none;
         background-color: #e4438b;
         color: white;
         transition: .5s;
     }
+}

@@ -61,6 +61,22 @@ body {
     font-size: 13.5px;
 }
 
+.card-contenido input {
+    background-color: transparent;
+    border: solid 1px #FF6464;
+    width: auto;
+    padding: 10px;
+    color: #FF6464;
+    border-radius: 50px;
+    font-size: 15px;
+
+    &:hover {
+        background-color: #FF6464;
+        color: white;
+        transition: .3s;
+    }
+}
+
 /*mark {
     background-color: #ffaad0;
 }

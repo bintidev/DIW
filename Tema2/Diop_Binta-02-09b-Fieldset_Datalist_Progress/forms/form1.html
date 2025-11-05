@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+    <link rel="stylesheet" href="../assets/style/forms-style.css">
+</head>
+<body>
+    
+    <div id="contenedor">
+
+        <form>
+
+            <h1>Formulario 1</h1>
+
+            <fieldset>
+                <legend>Datos personales</legend> <br>
+
+                <label for="nombre">Nombre</label> <br>
+                <input type="text" name="nombre" placeholder="Ej.: Ana"> <br><br>
+
+                <label for="apellido">Apellido</label> <br>
+                <input type="text" name="apellido" placeholder="Ej.: Ana"> <br><br>
+
+                <label for="edad">Edad</label> <br>
+                <input type="text" name="edad" placeholder="Ej.: Ana"> <br><br>
+
+                <label for="satisfaccion">Seleccione su nivel de satisfacción con el concierto:</label> <br>
+                <input type="range" name="satisfaccion" min="0" max="100"> <br><br>
+
+                <button>Enviar (submit)</button>
+                <button type="reset">Limpiar (reset)</button>
+                <button disabled="disabled">Botón deshabilitado</button>
+                <button autofocus>Atención (autofocus)</button>
+            </fieldset>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
