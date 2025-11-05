@@ -1,6 +1,8 @@
 body {
-    background: #F8FFDB;
-    background: linear-gradient(315deg,rgba(248, 255, 219, 1) 50%, rgba(255, 231, 231, 1) 68%, rgba(255, 100, 100, 1) 100%);
+    background:
+        linear-gradient(217deg, #ff6464e3, transparent 70.71%),
+        linear-gradient(127deg, #B3FFAEe3, transparent 70.71%),
+        linear-gradient(336deg, #F8FFDBe3, transparent 70.71%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,7 +19,7 @@ body {
 
 form {
     width: 30rem;
-    background: transparent;
+    background: #e6cbcb;
     backdrop-filter: blur(15px);
     border: solid 5px #FF646449;
     border-radius: 20px;
@@ -33,44 +35,52 @@ h1 {
     text-align: center;
 }
 
-.form-control {
+form {
     font-family: "Red Hat Display", sans-serif;
     margin: 25px;
 }
 
-input {
+textarea, input {
     border-radius: 15px;
     padding: 10px;
     border: none;
     width: 15rem;
-    background-color: #e4e4e4;
+    background-color: #dce0ca;
+    font-size: 12px;
 
     &::placeholder {
         font-family: "Red Hat Display", sans-serif;
+        font-size: 13.5px;
     }
 
     &:hover {
-        background-color: #ff93c294;
+        background-color: #F8FFDB94;
         transition-duration: .5s;
     }
 
     &:focus {
-        outline: solid 1px #e4438b;
-        background-color: #ffcae1;
+        outline: solid 1px #FF6464;
+        background-color: #ffe7e7;
         transition-duration: .5s;
     }
 }
 
+fieldset {
+    margin: 10px;
+    border: solid 2px #B3FFAEe3;
+    border-radius: 25px;
+}
+
 #btn-envio {
-    outline: solid 1px #e4438b;
-    background-color: #ffcae1;
-    color: #e4438b;
+    margin-top: 15px;
+    background-color: #FF6464;
+    color: #B3FFAE;
     width: 10.5rem;
 
     &:hover {
         outline: none;
-        background-color: #e4438b;
-        color: white;
+        background-color: #F8FFDB;
+        color: #FF6464;
         transition: .5s;
     }
 }

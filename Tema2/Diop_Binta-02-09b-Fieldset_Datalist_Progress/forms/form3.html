@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 3</title>
+    <link rel="stylesheet" href="../assets/style/forms-style.css">
+</head>
+<body>
+    
+    <div id="contenedor">
+
+        <form>
+
+            <h1>Formulario 3</h1>
+
+            <fieldset>
+                <legend>Genera tu personaje para el juego</legend> <br>
+
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Ej.: Raven"> <br><br>
+
+                <label for="valoracion">Valoración: </label>
+                <input type="text" name="valoracion" placeholder="Pulsa para facciones" list="tipo"> <br><br>
+
+                <datalist id="tipo">
+                    <option value="">Guerrero</option>
+                    <option value="">Mago</option>
+                    <option value="">Ladrón</option>
+                    <option value="">Paladín</option>
+                </datalist>
+
+                <label for="edad">Escoge la edad:</label> <br>
+                <input type="range" name="edad" min="0" max="100"> <br><br>
+
+                <input type="button" value="Genera tu personaje" onclick="cambio()" id="btn-envio">
+            </fieldset>
+
+            <fieldset id="char-data" style="visibility: hidden;">
+                <legend>Datos del personaje</legend>
+
+                <label for="fuerza">Fuerza</label> <br>
+                <progress id="fuerza" min="0" max="200" value="0"></progress> <br><br>
+
+                <label for="velocidad">Velocidad</label> <br>
+                <progress id="velocidad" min="0" max="200" value="0"></progress> <br><br>
+
+                <label for="persuasion">Persuasión</label> <br>
+                <progress id="persuasion" min="0" max="200" value="0"></progress> <br><br>
+
+                <label for="espionaje">Espionaje</label> <br>
+                <progress id="espionaje" min="0" max="200" value="0"></progress>
+            </fieldset>
+
+        </form>
+
+    </div>
+
+    <script>
+
+        function cambio() {
+
+            let personaje = document.getElementById("char-data");
+            personaje.style.visibility = "visible";
+
+            let velocidad = document.getElementById("velocidad");
+            let fuerza = document.getElementById("fuerza");
+            let persuasion = document.getElementById("persuasion");
+            let espionaje = document.getElementById("espionaje");
+
+            velocidad.value = Math.random() * 200;
+            fuerza.value = Math.random() * 200;
+            persuasion.value = Math.random() * 200;
+            espionaje.value = Math.random() * 200;
+
+        }
+
+    </script>
+
+</body>
+</html>

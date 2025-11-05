@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+    <link rel="stylesheet" href="../assets/style/forms-style.css">
+</head>
+<body>
+    
+    <div id="contenedor">
+
+        <form>
+
+            <h1>Formulario 4</h1>
+
+            <fieldset>
+                <legend>Genera tu personaje para el juego</legend> <br>
+
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Ej.: Raven"> <br><br>
+
+                <label for="valoracion">Valoración: </label>
+                <input type="text" name="valoracion" id="valoracion" placeholder="Pulsa para facciones" list="tipo" onchange="cambio()"> <br><br>
+
+                <datalist id="tipo">
+                    <option value="Guerrero">Guerrero</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Ladron">Ladrón</option>
+                    <option value="Paladin">Paladín</option>
+                </datalist>
+
+                <label for="edad">Escoge la edad:</label> <br>
+                <input type="range" name="edad" min="0" max="100"> <br><br>
+
+                <input type="button" value="Genera tu personaje" onclick="cambio()" id="btn-envio">
+            </fieldset>
+
+            <fieldset id="char-data" style="visibility: hidden;">
+                <legend>Datos del personaje</legend>
+
+                <label for="fuerza">Fuerza</label> <br>
+                <meter id="fuerza" min="0" max="200" value="0"></meter> <br><br>
+
+                <label for="velocidad">Velocidad</label> <br>
+                <meter id="velocidad" min="0" max="200" value="0"></meter> <br><br>
+
+                <label for="persuasion">Persuasión</label> <br>
+                <meter id="persuasion" min="0" max="200" value="0"></meter> <br><br>
+
+                <label for="espionaje">Espionaje</label> <br>
+                <meter id="espionaje" min="0" max="200" value="0"></meter>
+            </fieldset>
+
+        </form>
+
+    </div>
+
+    <script>
+
+        function cambio() {
+
+            let valoracion = document.getElementById("valoracion").value;
+
+            let personaje = document.getElementById("char-data");
+            personaje.style.visibility = "visible";
+
+            let velocidad = document.getElementById("velocidad");
+            let fuerza = document.getElementById("fuerza");
+            let persuasion = document.getElementById("persuasion");
+            let espionaje = document.getElementById("espionaje");
+            
+            switch (valoracion) {
+
+                case 'Guerrero':
+                    traits(117, 200, 23, 190);
+                    break;
+
+                case 'Mago':
+                    traits(5, 50, 186, 152);
+                    break;
+
+                case 'Ladron':
+                    traits(105, 54, 89, 200);
+                    break;
+
+                case 'Paladin':
+                    traits(25, 200, 49, 53);
+                    break;
+
+            }
+
+            // funcion para establecer las caracteristicas especificas del personaje
+            function traits(v, f, p, e) {
+
+                velocidad.value = v;
+                fuerza.value = f;
+                persuasion.value = p;
+                espionaje.value = e;
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

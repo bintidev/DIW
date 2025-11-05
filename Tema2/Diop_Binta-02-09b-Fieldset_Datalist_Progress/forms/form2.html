@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+    <link rel="stylesheet" href="../assets/style/forms-style.css">
+</head>
+<body>
+    
+    <div id="contenedor">
+
+        <form>
+
+            <h1>Formulario 2</h1>
+
+            <fieldset>
+                <legend>Datos personales</legend> <br>
+
+                <label for="nombre">Nombre</label> <br>
+                <input type="text" name="nombre" placeholder="Ej.: Ana"> <br><br>
+
+                <label for="apellido">Apellido</label> <br>
+                <input type="text" name="apellido" placeholder="Ej.: Ana"> <br><br>
+
+                <label for="edad">Edad</label> <br>
+                <input type="text" name="edad" placeholder="Ej.: Ana"> <br><br>
+
+                <label for="satisfaccion">Seleccione su nivel de satisfacción con el concierto:</label> <br>
+                <input type="range" name="satisfaccion" min="0" max="100"> <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Concierto</legend>
+
+                <label for="asistencia">Concierto al que asististe: </label>
+                <input type="text" name="asistencia" id="asistencia" list="concierto" placeholder="Pulsa para ver conciertos">
+
+                <datalist id="concierto">
+                    <option value="">Malú</option>
+                    <option value="">Omar Montes</option>
+                    <option value="">Los Mojinos</option>
+                    <option value="">Medina Azahara</option>
+                    <option value="">Julio Iglesias</option>
+                </datalist>
+
+                <br><br>
+
+                <label for="resena">¿Qué te ha parecido el concierto?</label> <br>
+                <textarea name="resena" id="resena" placeholder="Escribe tus impresiones"
+                cols="50" rows="6"></textarea>
+
+                <br><br>
+
+                <label for="valoracion">Valoración: </label>
+                <input type="text" name="valoracion" id="valoracion" list="puntaje" placeholder="Pulsa para ver opciones">
+
+                <datalist id="puntaje">
+                    <option value="">Excelente</option>
+                    <option value="">Bueno</option>
+                    <option value="">Regular</option>
+                    <option value="">Mala</option>
+                    <option value="">Horrible</option>
+                </datalist>
+            </fieldset>
+
+            <input type="submit" value="Gracias por sus opiniones" id="btn-envio">
+
+        </form>
+
+    </div>
+
+</body>
+</html>
