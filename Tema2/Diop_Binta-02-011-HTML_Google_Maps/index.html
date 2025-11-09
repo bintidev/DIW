@@ -14,19 +14,21 @@
     </div>
 
     <div id="container">
-        <div id="mapa-coordenadas">
-            <div class="input-group">
-                <label for="coorX">Coordenadas x: </label>
-                <input type="text" id="coorX" name="coorX" value="36.62206773958637">
+        <form>
+            <div id="mapa-coordenadas">
+                <div class="input-group">
+                    <label for="coorX">Coordenadas x: </label>
+                    <input type="text" id="coorX" name="coorX" value="36.62206773958637">
+                </div>
+                <div class="input-group">
+                    <label for="coorY">Coordenadas y:</label>
+                    <input type="text" id="coorY" name="coorY" value="-4.50385311129575"> <br>
+                </div>
+                <button id="btn-buscar-ub">
+                    <a target="mapa" id="ubicacion">Buscar Ubicación</a>
+                </button>
             </div>
-            <div class="input-group">
-                <label for="coorY">Coordenadas y:</label>
-                <input type="text" id="coorY" name="coorY" value="-4.50385311129575"> <br>
-            </div>
-            <button id="btn-buscar-ub">
-                <a target="mapa" id="ubicacion">Buscar Ubicación</a>
-            </button>
-        </div>
+        </form>
         
 
         <table cellpadding="10">
