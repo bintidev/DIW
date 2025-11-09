@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    
+    <div id="cabecera">
+        <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-10.png" alt="js-logo" id="logo">
+        <h1>Binta - Google Map</h1>
+    </div>
+
+    <div id="container">
+        <div id="mapa-coordenadas">
+            <div class="input-group">
+                <label for="coorX">Coordenadas x: </label>
+                <input type="text" id="coorX" name="coorX" value="36.62206773958637">
+            </div>
+            <div class="input-group">
+                <label for="coorY">Coordenadas y:</label>
+                <input type="text" id="coorY" name="coorY" value="-4.50385311129575"> <br>
+            </div>
+            <button id="btn-buscar-ub">
+                <a target="mapa" id="ubicacion">Buscar Ubicación</a>
+            </button>
+        </div>
+        
+
+        <table cellpadding="10">
+            <thead>
+                <th colspan="2">Mapas de Google Maps</td>
+            </thead>
+            <tbody>
+                <td>
+                    <ol>
+                        <li>
+                            <a href="https://www.google.com/maps/d/embed?mid=1UhbPZFn_kPklOBU-MYTDPT14TBoPn5c&hl=es&ehbc=2E312F" target="mapa">Mapa de Sevilla</a>
+                        </li>
+                        <li>
+                            <a href="" target="mapa">
+                                Panorámica IES Playamar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/embed?pb=!4v1762692026078!6m8!1m7!1sW8dDSqWqOAJmtT9OMqjOew!2m2!1d14.83331645592451!2d-17.23769790839924!3f358.61531733526897!4f-1.0148221701035993!5f0.7820865974627469" target="mapa">Panorámica Lac Rose, Senegal</a>
+                        </li>
+                        <li>
+                            <a href="#" id="coor-torre">Mapa de Torremolinos: Coordenadas</a>
+                            <script>
+                                // hace visible los campos de introduccion de las coordenadas
+                                document.getElementById("coor-torre").addEventListener ("click", function () {
+                                    // alamcena un array con los elementos pertenecientes a la clase input-group
+                                    let coordenadas = document.querySelectorAll(".input-group");
+                                    // recorre los elementos y cambia el estilo de visibilidad de cada uno de
+                                    // ellos a visible
+                                    for (let i = 0; i < coordenadas.length; i++) {
+                                        coordenadas[i].style.visibility = "visible";
+                                    }
+                                    document.getElementById("btn-buscar-ub").style.visibility = "visible";
+                                });
+
+                                // recoge los valores de coordenadas
+                                let coorX = document.getElementById("coorX").value;
+                                let coorY = document.getElementById("coorY").value;
+                                // crea una URL al mapa con las coordenadas dadas
+                                let url = `https://www.google.com/maps?q=${coorX},${coorY}&hl=es&z=16&output=embed`;
+
+                                // atribuye la URL al atributo de href al enlace correspondiente del documento
+                                document.getElementById("ubicacion").href = url;
+                            </script>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/d/u/2/embed?mid=1ooKHCeKPJ09-X2qViV-C7zgSSybcW5Y&ehbc=2E312F" target="mapa">
+                                Atracciones Turísticas de Londres
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/d/u/2/embed?mid=1_ib76lL-fSAp7qgn8FiIfp-WbnqS3OQ&ehbc=2E312F" target="mapa">
+                                Mapa de Roma
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/d/u/2/embed?mid=1OyyM4zsuXOpI78KwJhnsINRusFJmgtM&ehbc=2E312F" target="mapa">
+                                Mapa de Ucrania
+                            </a>
+                        </li>
+                    </ol>
+                </td>
+                <td>
+                    <iframe name="mapa" width="600" height="450" frameborder="0"></iframe>
+                </td>
+            </tbody>
+            <tfoot>
+                <td colspan="2" align="center">&copy; Etiquetas HTML - Google Maps, Binta Diop, 2025</td>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>
