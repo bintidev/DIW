@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+    <h3>Distintos Formatos de Icono en Páginas</h3>
+    <button onclick="changeIcon('png')">Icono formato .png</button>
+    <button onclick="changeIcon('ico')">Icono formato .ico</button>
+    <button onclick="changeIcon('gif')">Icono formato .gif</button>
+    <p id="msg"></p>
+
+    <script>
+
+        // cambia el favicon de la página en función del
+        // tipo de extensión/formato pasado por parámetro
+        function changeIcon(iFormat) {
+
+            let headEl = document.querySelector("head");
+            let linkToIco = document.createElement("link");
+
+            // texto descriptivo de lo que ha ocurrido en la página
+            let descriptiveMsg = document.getElementById("msg");
+
+            linkToIco.setAttribute("rel", 'shortcut icon')
+            linkToIco.setAttribute("type", 'image/x-icon');
+
+            switch (iFormat) {
+                case 'png':
+                    linkToIco.setAttribute("href", './cutie.png');
+                    document.title = "Icono .png";
+                    descriptiveMsg.innerHTML = "Se ha cambiado el icono, junto al título, a tipo .png";
+                    break;
+            
+                case 'ico':
+                    linkToIco.setAttribute("href", './cutie.ico');
+                    document.title = "Icono .ico";
+                    descriptiveMsg.innerHTML = "Se ha cambiado el icono, junto al título, a tipo .ico";
+                    break;
+
+                case 'gif':
+                    linkToIco.setAttribute("href", './teddy.gif');
+                    document.title = "Icono .gif";
+                    descriptiveMsg.innerHTML = "Se ha cambiado el icono, junto al título, a tipo .gif <br>";
+                    descriptiveMsg.innerHTML += "NOTA: animación visualizable en Firefox";
+                    break;
+            }
+
+            headEl.appendChild(linkToIco);
+
+        }
+
+    </script>
+
+</body>
+</html>
