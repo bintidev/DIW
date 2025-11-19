@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ececec;
+    background-color: #fcf3ff;
     scroll-behavior: smooth;
 }
 
@@ -20,7 +20,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
-    background-color: #37353E;
+    background-color: #540863;
     font-size: 22px;
 }
 
@@ -46,46 +46,20 @@ body {
 }
 
 .card-cabecera {
-    background-color: #967979;
-    color: #37353E;
+    background-color: #E49BA6;
+    color: #540863;
     padding: 1.50rem;
     border-radius: 20px 20px 0 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .card-contenido {
-    background-color: #dabfbf;
+    background-color: #FFD3D5;
     padding: 1rem;
     border-radius: 0 0 20px 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 13.5px;
+    font-size: 13.5px
 }
-
-.card-contenido input {
-    background-color: transparent;
-    border: solid 1px #37353E;
-    width: auto;
-    padding: 10px;
-    color: #37353E;
-    border-radius: 50px;
-    font-size: 15px;
-
-    &:hover {
-        background-color: #37353E;
-        color: white;
-        transition: .3s;
-        cursor: pointer;
-    }
-}
-
-/*mark {
-    background-color: #ffaad0;
-}
-
-span {
-    color: #e4438b;
-    text-decoration: underline double #e4438b;
-}*/
 
 @media screen and (min-width: 1000px) {
 
