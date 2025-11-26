@@ -97,6 +97,12 @@
                                 <path fill="none" stroke="red" d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
                             </svg>
                         </td>
+                        <td>
+                            <h4>Ejemplo 10:</h4>
+                            <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+                                <line x1="10" x2="50" y1="110" y2="150" stroke="black" stroke-width="5"/>
+                            </svg>
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -105,7 +111,10 @@
             <div class="card-ejercicio">
                 <div class="card-cabecera">
                     <h2>
-                        Ejercicio2. Crea un archivo independiente de svg con el archivo anterior.
+                        Ejercicio 2. Crea un svg que aparezca este diseño con círculos  <br>
+                        (ojo el centro es el mismo el stroke tiene un degradado de amarillos desde 
+                        el DD8800 hasta el FFFF00 en el mas pequeño y los stroke-width bajan de 3 
+                        en tres del mas externo al interno)
                     </h2>
                 </div>
                 <div class="card-contenido">
@@ -128,13 +137,16 @@
                 </div>
                 <div class="card-contenido">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                        width="355" height="355" viewBox="-100 -50 250 200"
-                        style="background-color: lightgray;">
-                        <circle cx="-35" cy="50" r="15" fill="#550000"/>
-                        <circle cx="-15" cy="50" r="20" fill="#880000"/>
-                        <circle cx="10" cy="50" r="25" fill="#AA0000"/>
-                        <circle cx="35" cy="50" r="30" fill="#CC0000"/>
-                        <circle cx="60" cy="50" r="35" fill="#FF0000"/>
+                        width="200" height="200" viewBox="0 0 80 80"
+                        style="background-color: #fcf3ff;">
+                        <line x1="5" x2="75" y1="20" y2="20" stroke="lightblue" stroke-width="1" />
+                        <line x1="5" x2="75" y1="60" y2="60" stroke="green" stroke-width="1" />
+                    </svg>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        width="200" height="200" viewBox="0 0 80 80"
+                        style="background-color: #fcf3ff;">
+                        <line x1="5" x2="75" y1="40" y2="40" stroke="lightblue" stroke-width="1" />
+                        <line x1="40" x2="40" y1="5" y2="75" stroke="blue" stroke-width="1" />
                     </svg>
                 </div>
             </div>
@@ -142,20 +154,15 @@
             <div class="card-ejercicio">
                 <div class="card-cabecera">
                     <h2>
-                        Ejercicio 4. Modifica el anterior para que el degradado sea en verdes y se incremente sobre el eje 
-                        cy y se  se vaya desplazando de 25 en 25m  de manera que el más oscuro salga 
-                        encima de la pila  y su radio vaya creciendo de 5 en 5
+                        Ejercicio 4. Crea un svg con una linea perpendicular a una esfera
                     </h2>
                 </div>
                 <div class="card-contenido">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                        width="355" height="355" viewBox="-100 -50 250 200"
-                        style="background-color: lightgray;">
-                        <circle cx="20" cy="85" r="35" fill="#00FF00"/>
-                        <circle cx="20" cy="60" r="30" fill="#00CC00"/>
-                        <circle cx="20" cy="35" r="25" fill="#00AA00"/>
-                        <circle cx="20" cy="10" r="20" fill="#008800"/>
-                        <circle cx="20" cy="-15" r="15" fill="#005500"/>
+                        width="200" height="200" viewBox="0 0 80 80"
+                        style="background-color: #fcf3ff;">
+                        <line x1="5" x2="75" y1="20" y2="20" stroke="black" stroke-width="1" />
+                        <circle cx="50" cy="40.7" r="20" stroke="red" stroke-width="1" fill="transparent" />
                     </svg>
                 </div>
             </div>
@@ -163,42 +170,18 @@
             <div class="card-ejercicio">
                 <div class="card-cabecera">
                     <h2>
-                        Ejercicio 5. Modifica el anterior para que el degradado sea en amarillos,cyan y 
-                        purpura y se incremente sobre el eje cy y el cx  de manera que salga esta figura. 
-                        (ejemplo de códigos de circle) <br><br>
-
-                        Este muestra el degradado de los cyanes. <br><br>
-
-                        <code>
-                            cx="225" cy="15" r="15" fill="#005555" <br>
-                            cx="200" cy="30" r="20" fill="#008888" <br>
-                            cx="175" cy="45" r="25" fill="#00AAAA" <br>
-                            cx="150" cy="60" r="30" fill="#00CCCC" <br>
-                            cx="125" cy="75" r="35" fill="#00FFFF"
-                        </code>
+                        Ejercicio 5.  Modifica el anterior para que tenga perpendiculares en 4 puntos
                     </h2>
                 </div>
                 <div class="card-contenido">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                        width="355" height="355" viewBox="100 -50 240 250"
-                        style="background-color: lightgray;">
-                        <!-- azulados -->
-                        <circle cx="320" cy="10" r="15" fill="#005555"/>
-                        <circle cx="295" cy="25" r="20" fill="#008888"/>
-                        <circle cx="270" cy="40" r="25" fill="#00AAAA"/>
-                        <circle cx="245" cy="55" r="30" fill="#00CCCC"/>
-                        <!-- amarillento -->
-                        <circle cx="120" cy="10" r="15" fill="#555500"/>
-                        <circle cx="145" cy="25" r="20" fill="#888800"/>
-                        <circle cx="170" cy="40" r="25" fill="#AAAA00"/>
-                        <circle cx="195" cy="55" r="30" fill="#CCCC00"/>
-                        <!-- cyan -->
-                        <circle cx="220" cy="70" r="35" fill="#00FFFF"/>
-                        <!-- violeta -->
-                        <circle cx="220" cy="95" r="30" fill="#CC00CC"/>
-                        <circle cx="220" cy="120" r="25" fill="#AA00AA"/>
-                        <circle cx="220" cy="145" r="20" fill="#880088"/>
-                        <circle cx="220" cy="170" r="15" fill="#550055"/>
+                        width="200" height="200" viewBox="0 0 80 80"
+                        style="background-color: #fcf3ff;">
+                        <circle cx="40" cy="40" r="20" stroke="red" stroke-width="1" fill="transparent" />
+                        <line x1="19" x2="19" y1="5" y2="75" stroke="blue" stroke-width="1" />
+                        <line x1="61" x2="61" y1="5" y2="75" stroke="green" stroke-width="1" />
+                        <line x1="5" x2="75" y1="19" y2="19" stroke="lightblue" stroke-width="1" />
+                        <line x1="5" x2="75" y1="61" y2="61" stroke="lightgreen" stroke-width="1" />
                     </svg>
                 </div>
             </div>
@@ -206,101 +189,52 @@
             <div class="card-ejercicio">
                 <div class="card-cabecera">
                     <h2>
-                        Ejercicio 6. Modifica los viewbox para que se vea solo esto .  (puedes usar otra figura)
-                        <br><br>
-                        <code>
-                            width="150" height="150"  viewBox="-150 -150 500 500" <br>
-                            width="100" height="100"  viewBox="-200 -200 600 600"
-                        </code>
+                        Ejercicio 6. Crea un svg que aparezca este diseño con elipses.  Tienes que hacer una progresión 
+                        desde los valores
                     </h2>
                 </div>
                 <div class="card-contenido">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                        width="255" height="255" viewBox="100 -50 340 350"
-                        style="background-color: lightgray;">
-                        <!-- azulados -->
-                        <circle cx="320" cy="10" r="15" fill="#005555"/>
-                        <circle cx="295" cy="25" r="20" fill="#008888"/>
-                        <circle cx="270" cy="40" r="25" fill="#00AAAA"/>
-                        <circle cx="245" cy="55" r="30" fill="#00CCCC"/>
-                        <!-- amarillento -->
-                        <circle cx="120" cy="10" r="15" fill="#555500"/>
-                        <circle cx="145" cy="25" r="20" fill="#888800"/>
-                        <circle cx="170" cy="40" r="25" fill="#AAAA00"/>
-                        <circle cx="195" cy="55" r="30" fill="#CCCC00"/>
-                        <!-- cyan -->
-                        <circle cx="220" cy="70" r="35" fill="#00FFFF"/>
-                        <!-- violeta -->
-                        <circle cx="220" cy="95" r="30" fill="#CC00CC"/>
-                        <circle cx="220" cy="120" r="25" fill="#AA00AA"/>
-                        <circle cx="220" cy="145" r="20" fill="#880088"/>
-                        <circle cx="220" cy="170" r="15" fill="#550055"/>
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" width="200" 
+                    height="200" style="background-color: #fcf3ff;">
+                        <ellipse cx="75" cy="75" rx="10"  ry="50"  stroke="orange" fill="transparent" stroke-width="3"/>
+                        <ellipse cx="75" cy="75" rx="20" ry="40" stroke="orange" fill="transparent" stroke-width="3"/>
+                        <ellipse cx="75" cy="75" rx="30" ry="30" stroke="orange" fill="transparent" stroke-width="3"/>
+                        <ellipse cx="75" cy="75" rx="40" ry="10" stroke="orange" fill="transparent" stroke-width="3"/>
+                        <ellipse cx="75" cy="75" rx="50" ry="0" stroke="orange" fill="transparent" stroke-width="3"/>
                     </svg>
+                </div>
+            </div>
 
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                        width="155" height="155" viewBox="100 -50 440 450"
-                        style="background-color: lightgray;">
-                        <!-- azulados -->
-                        <circle cx="320" cy="10" r="15" fill="#005555"/>
-                        <circle cx="295" cy="25" r="20" fill="#008888"/>
-                        <circle cx="270" cy="40" r="25" fill="#00AAAA"/>
-                        <circle cx="245" cy="55" r="30" fill="#00CCCC"/>
-                        <!-- amarillento -->
-                        <circle cx="120" cy="10" r="15" fill="#555500"/>
-                        <circle cx="145" cy="25" r="20" fill="#888800"/>
-                        <circle cx="170" cy="40" r="25" fill="#AAAA00"/>
-                        <circle cx="195" cy="55" r="30" fill="#CCCC00"/>
-                        <!-- cyan -->
-                        <circle cx="220" cy="70" r="35" fill="#00FFFF"/>
-                        <!-- violeta -->
-                        <circle cx="220" cy="95" r="30" fill="#CC00CC"/>
-                        <circle cx="220" cy="120" r="25" fill="#AA00AA"/>
-                        <circle cx="220" cy="145" r="20" fill="#880088"/>
-                        <circle cx="220" cy="170" r="15" fill="#550055"/>
+            <div class="card-ejercicio">
+                <div class="card-cabecera">
+                    <h2>
+                        Ejercicio 7. Crea un svg con esta forma (mas o menos)
+                        el triangulo es un polígono de tres puntos
+                    </h2>
+                </div>
+                <div class="card-contenido">
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" width="200" 
+                    height="200" style="background-color: #fcf3ff;">
+                        <rect x="20" y="50" width="45" height="45" fill="cornflowerblue"/>
+                        <polygon points="80,70 100,30 120,70" fill="orange"/>
+                        <circle cx="100" cy="100" r="20" fill="red"/>
                     </svg>
+                </div>
+            </div>
 
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                        width="95" height="95" viewBox="100 -50 540 550"
-                        style="background-color: lightgray;">
-                        <!-- azulados -->
-                        <circle cx="320" cy="10" r="15" fill="#005555"/>
-                        <circle cx="295" cy="25" r="20" fill="#008888"/>
-                        <circle cx="270" cy="40" r="25" fill="#00AAAA"/>
-                        <circle cx="245" cy="55" r="30" fill="#00CCCC"/>
-                        <!-- amarillento -->
-                        <circle cx="120" cy="10" r="15" fill="#555500"/>
-                        <circle cx="145" cy="25" r="20" fill="#888800"/>
-                        <circle cx="170" cy="40" r="25" fill="#AAAA00"/>
-                        <circle cx="195" cy="55" r="30" fill="#CCCC00"/>
-                        <!-- cyan -->
-                        <circle cx="220" cy="70" r="35" fill="#00FFFF"/>
-                        <!-- violeta -->
-                        <circle cx="220" cy="95" r="30" fill="#CC00CC"/>
-                        <circle cx="220" cy="120" r="25" fill="#AA00AA"/>
-                        <circle cx="220" cy="145" r="20" fill="#880088"/>
-                        <circle cx="220" cy="170" r="15" fill="#550055"/>
-                    </svg>
-
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                        width="65" height="65" viewBox="100 -50 640 650"
-                        style="background-color: lightgray;">
-                        <!-- azulados -->
-                        <circle cx="320" cy="10" r="15" fill="#005555"/>
-                        <circle cx="295" cy="25" r="20" fill="#008888"/>
-                        <circle cx="270" cy="40" r="25" fill="#00AAAA"/>
-                        <circle cx="245" cy="55" r="30" fill="#00CCCC"/>
-                        <!-- amarillento -->
-                        <circle cx="120" cy="10" r="15" fill="#555500"/>
-                        <circle cx="145" cy="25" r="20" fill="#888800"/>
-                        <circle cx="170" cy="40" r="25" fill="#AAAA00"/>
-                        <circle cx="195" cy="55" r="30" fill="#CCCC00"/>
-                        <!-- cyan -->
-                        <circle cx="220" cy="70" r="35" fill="#00FFFF"/>
-                        <!-- violeta -->
-                        <circle cx="220" cy="95" r="30" fill="#CC00CC"/>
-                        <circle cx="220" cy="120" r="25" fill="#AA00AA"/>
-                        <circle cx="220" cy="145" r="20" fill="#880088"/>
-                        <circle cx="220" cy="170" r="15" fill="#550055"/>
+            <div class="card-ejercicio">
+                <div class="card-cabecera">
+                    <h2>
+                        Ejercicio 8. Usa https://yqnn.github.io/svg-path-editor/ para generar una ruta chula
+                    </h2>
+                </div>
+                <div class="card-contenido">
+                    <svg viewBox="-3 -3 20 20" xmlns="http://www.w3.org/2000/svg" width="400" 
+                    height="400" style="background-color: #fcf3ff;">
+                        <path d="M 4 8 L 10 1 L 13 0 L 12 3 L 5 9 C 6 10 6 11 7 10 C 7 11 8 12 7 
+                        12 A 1.42 1.42 0 0 1 6 13 A 5 5 0 0 0 4 10 Q 3.5 9.9 3.5 10.5 T 2 11.8 T 
+                        1.2 11 T 2.5 9.5 T 3 9 A 5 5 90 0 0 0 7 A 1.42 1.42 0 0 1 1 6 C 1 5 2 6 3 
+                        6 C 2 7 3 7 4 8 M 10 1 L 10 3 L 12 3 L 10.2 2.8 L 10 1" fill="gray">
                     </svg>
                 </div>
             </div>
