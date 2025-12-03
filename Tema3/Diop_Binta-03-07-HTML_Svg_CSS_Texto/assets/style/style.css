@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fcf3ff;
+    background-color: #dfebd9;
     scroll-behavior: smooth;
 }
 
@@ -20,7 +20,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
-    background-color: #540863;
+    background-color: #BF9E60;
     font-size: 22px;
 }
 
@@ -46,15 +46,15 @@ body {
 }
 
 .card-cabecera {
-    background-color: #E49BA6;
-    color: #540863;
+    background-color: #3B403E;
+    color: #BF9E60;
     padding: 1.50rem;
     border-radius: 20px 20px 0 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .card-contenido {
-    background-color: #FFD3D5;
+    background-color: #D8D9CC;
     padding: 1rem;
     border-radius: 0 0 20px 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
