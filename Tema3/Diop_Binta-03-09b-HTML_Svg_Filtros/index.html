@@ -267,7 +267,7 @@
                 </h2>
             </div>
             <div class="card-contenido">
-                <svg width="400" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <svg width="450" height="350" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
                     <filter id="displacementFilter2">
                         <feTurbulence type="turbulence" baseFrequency="1" numOctaves="5" result="turbulence" />
                         <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="20" xChannelSelector="G"
@@ -278,8 +278,14 @@
                         <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="80" xChannelSelector="R"
                             yChannelSelector="B" />
                     </filter>
-                    <circle cx="0" cy="30" r="40" style="filter: url(#displacementFilter2)" />
-                    <circle cx="0" cy="30" r="40" style="filter: url(#displacementFilter3)" />
+                    <filter id="displacementFilter4">
+                        <feTurbulence type="turbulence" baseFrequency="0.2" numOctaves="1" result="turbulence" />
+                        <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="65" xChannelSelector="B"
+                            yChannelSelector="G" />
+                    </filter>
+                    <circle cx="5" cy="70" r="40" style="filter: url(#displacementFilter2)" />
+                    <circle cx="100" cy="65" r="40" style="filter: url(#displacementFilter3)" />
+                    <circle cx="190" cy="65" r="40" style="filter: url(#displacementFilter4)" />
                 </svg>
             </div>
         </div>
@@ -308,7 +314,7 @@
                             <feMergeNode />
                             <feMergeNode in="SourceGraphic" />
                         </feMerge>
-                        
+
                         <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" result="turbulence" />
                         <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="50" xChannelSelector="R"
                             yChannelSelector="G" />
@@ -323,165 +329,26 @@
         <div class="card-ejercicio">
             <div class="card-cabecera">
                 <h2>
-                    Ejercicio 7. Ha como el anterior para que al pasar sobre el ratón se agrande el tamaño de cada
-                    letra. Debes jugar con tspan y hover.
+                    Ejercicio 7. Modifica el ejemplo 7 sobre sombras para que quede asi
                 </h2>
             </div>
             <div class="card-contenido">
-                <svg viewBox="0 0 150 60" xmlns="http://www.w3.org/2000/svg" width="155">
+                <svg viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                        <style>
-                            #espana {
-                                font-size: 20px;
-                            }
-
-                            #es:hover,
-                            #pa:hover,
-                            #na:hover {
-                                font-size: 30px;
-                            }
-                        </style>
+                        <filter id="shadow1-1">
+                            <feDropShadow dx="-0.35" dy="0.5" stdDeviation="0.2" flood-color="black" />
+                            <feDropShadow dx="0.35" dy="-0.4" stdDeviation="0.2" flood-color="black" />
+                        </filter>
+                        <filter id="shadow2-1">
+                            <feDropShadow dx="0.2" dy="0" stdDeviation="0.2" flood-color="yellow" />
+                        </filter>
+                        <filter id="shadow3-1">
+                            <feDropShadow dx="0.15" dy="0.3" stdDeviation="0.2" flood-color="red" flood-opacity=".25" />
+                        </filter>
                     </defs>
-
-                    <rect x="40" y="20" fill="red" width="30" height="60" />
-                    <rect x="70" y="20" fill="yellow" width="30" height="60" />
-                    <rect x="100" y="20" fill="red" width="32" height="60" />
-
-                    <text id="espana" x="40" y="30">
-                        <tspan id="es">ES</tspan>
-                        <tspan id="pa">PA</tspan>
-                        <tspan id="na">ÑA</tspan>
-                    </text>
-                </svg>
-            </div>
-        </div>
-
-        <div class="card-ejercicio">
-            <div class="card-cabecera">
-                <h2>
-                    Ejercicio 8. Crea un texto que tenga como estilo fuente Georgia y tamaño 25 que diga “IES
-                    PLAYAMAR” usando un path curvo que crees con la herramienta https://yqnn.github.io/svg-path-
-                    editor/
-                </h2>
-            </div>
-            <div class="card-contenido">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="5 0 20 20" width="300">
-                    <defs>
-                        <style>
-                            #playamar {
-                                font-family: Georgia, 'Times New Roman', Times, serif;
-                                font-size: 1.5px;
-                                fill: black;
-                            }
-                        </style>
-
-                        <linearGradient id="playamarPathFill">
-                            <stop offset="10%" stop-color="yellow" />
-                            <stop offset="30%" stop-color="white" />
-                            <stop offset="60%" stop-color="lightskyblue" />
-                        </linearGradient>
-                    </defs>
-
-                    <path id="playamar_path" d="M 8 8 C 8 8 12 13 17 8" stroke="transparent"
-                        fill="url('#playamarPathFill')" />
-                    <text id="playamar">
-                        <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#playamar_path" fill="black">
-                            IESPLAYAMAR
-                        </textPath>
-                    </text>
-                </svg>
-            </div>
-        </div>
-
-        <div class="card-ejercicio">
-            <div class="card-cabecera">
-                <h2>
-                    Ejercicio 9. A partir del ejemplo intenta sacar los siguientes degradados
-                </h2>
-            </div>
-            <div class="card-contenido">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="300">
-                    <defs>
-                        <linearGradient id="rainbowGradient" gradientTransform="rotate(90)">
-                            <stop offset="12.5%" stop-color="red" />
-                            <stop offset="25%" stop-color="orange" />
-                            <stop offset="37.5%" stop-color="orange" />
-                            <stop offset="50%" stop-color="yellow" />
-                            <stop offset="62.5%" stop-color="green" />
-                            <stop offset="75%" stop-color="cyan" />
-                            <stop offset="87.5%" stop-color="blue" />
-                            <stop offset="100%" stop-color="magenta" />
-                        </linearGradient>
-                        <radialGradient id="greenBlueRadial">
-                            <stop offset="12.5%" stop-color="blue" />
-                            <stop offset="25%" stop-color="green" />
-                            <stop offset="37.5%" stop-color="blue" />
-                            <stop offset="50%" stop-color="green" />
-                            <stop offset="62.5%" stop-color="blue" />
-                            <stop offset="75%" stop-color="green" />
-                            <stop offset="87.5%" stop-color="blue" />
-                            <stop offset="100%" stop-color="green" />
-                        </radialGradient>
-                    </defs>
-
-                    <circle cx="50" cy="90" r="50" fill="url('#rainbowGradient')" />
-                    <circle cx="150" cy="90" r="50" fill="url('#greenBlueRadial')" />
-                </svg>
-            </div>
-        </div>
-
-        <div class="card-ejercicio">
-            <div class="card-cabecera">
-                <h2>
-
-                    Ejercicio 10. modifica los textos de viva torremolinos para sacar algo parecido a esto
-                </h2>
-            </div>
-            <div class="card-contenido">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165 100" width="400"
-                    style="background-color: #fcf3ff;">
-                    <path id="torremolinos_path" d="M 20,20 C 80,60 100,40 300,20 " stroke="transparent"
-                        fill="transparent" />
-                    <text>
-                        <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#torremolinos_path"
-                            fill="url('#rainbowGradient')">
-                            Viva Torremolinos
-                        </textPath>
-                    </text>
-                </svg>
-            </div>
-        </div>
-
-        <div class="card-ejercicio">
-            <div class="card-cabecera">
-                <h2>
-                    Ejercicio 11. Utiliza el ejemplo Ejemplo 9b , este path y esta poesia para crear este diseño.
-                </h2>
-            </div>
-            <div class="card-contenido">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="4 2 20 20" width="500"
-                    style="background-color: #fcf3ff;">
-
-                    <defs>
-                        <style>
-                            #poema {
-                                font-size: 0.52px;
-                                word-spacing: 0.3px;
-                            }
-                        </style>
-                    </defs>
-
-                    <path id="my_path6" d="M 6 10 C 5 4 12 1 14 7 C 16 1 23 4 22 10 L 14 19 L 6 10" fill="transparent"
-                        stroke="transparent" stroke-width="2" />
-
-                    <text fill="red" id="poema">
-                        <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#my_path6">
-                            Me gustas cuando callas porque estás como ausente,
-                            y me oyes desde lejos, y mi voz no te toca.
-                            Parece que los ojos se te hubieran volado
-                            y parece que un beso te cerrara la boca.
-                        </textPath>
-                    </text>
+                    <circle cx="5" cy="50%" r="4" style="fill:blue; filter:url(#shadow1-1);" />
+                    <circle cx="15" cy="50%" r="4" style="fill:yellow; filter:url(#shadow2-1);" />
+                    <circle cx="25" cy="50%" r="4" style="fill:red; filter:url(#shadow3-1);" />
                 </svg>
             </div>
         </div>
