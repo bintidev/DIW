@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacciones SVG</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+
+    <div id="cabecera">
+        <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-10.png" alt="js-logo"
+            id="logo">
+        <h1>Binta - Interacciones SVG</h1>
+    </div>
+
+    <div id="container">
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h2>
+                    Ejercicio 1. Crea cada uno de los ejemplos que aparecen en la practica
+                </h2>
+            </div>
+            <div class="card-contenido">
+                <table cellpadding="5">
+                    <tr>
+                        <td>
+                            <h4>Ejemplo 1:</h4>
+                            <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+                                <path fill="none" stroke="grey"
+                                    d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+                                <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">
+                                    <circle r="5" fill="red">
+                                        <animateMotion dur="10s" repeatCount="indefinite"
+                                            path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+                                    </circle>
+                                </a>
+                            </svg>
+                        </td>
+                        <td>
+                            <h4>Ejemplo 2:</h4>
+                            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"
+                                version="1.1">
+                                <rect x="10" y="35" height="15" width="0">
+                                    <animate attributeType="XML" attributeName="width" id="rectangulo1" to="100"
+                                        dur="8s" fill="freeze" begin="2s" />
+                                </rect>
+                                <rect x="35" y="60" height="15" width="0">
+                                    <animate attributeType="XML" attributeName="width" id="rectangulo2" to="75" dur="6s"
+                                        fill="freeze" begin="rectangulo1.end" />
+                                </rect>
+                                <rect x="60" y="85" height="15" width="0">
+                                    <animate attributeType="XML" attributeName="width" id="rectangulo3" to="50" dur="4s"
+                                        fill="freeze" begin="rectangulo2.end" />
+                                </rect>
+                            </svg>
+                        </td>
+                        <td>
+                            <h4>Ejemplo 3:</h4>
+                            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"
+                                version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect x="10" y="35" height="15" width="0">
+                                    <animate attributeType="XML" attributeName="width" from="0" to="100" dur="8s"
+                                        fill="freeze" begin="startButton.click" />
+                                </rect>
+                                <rect id="startButton" style="cursor:pointer;" x="19.5" y="62.5" rx="5" height="25"
+                                    width="80" fill="#EFEFEF" stroke="black" stroke-width="1" />
+                                <text x="60" y="80" text-anchor="middle" style="pointer-events:none;"> Click me. </text>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Ejemplo 4:</h4>
+                            <svg width="270" height="290">
+                                <rect x=10 y=10 width=80 height=60 fill="yellow" stroke="navy" stroke-width="3">
+                                    <animate id="r1" attributeType="XML" attributeName="x" values="10;170;10" dur="2s"
+                                        begin="0s;r4.end+2s" />
+                                </rect>
+                                <rect x=10 y=80 width=80 height=60 fill="red" stroke="navy" stroke-width="3">
+                                    <animate id="r2" attributeType="XML" attributeName="x" values="10;170;10" dur="2s"
+                                        begin="r1.end" />
+                                </rect>
+                                <rect x=10 y=150 width=80 height=60 fill="green" stroke="navy" stroke-width="3">
+                                    <animate id="r3" attributeType="XML" attributeName="x" values="10;170;10" dur="2s"
+                                        begin="r2.end" />
+                                </rect>
+                                <rect x=10 y=220 width=80 height=60 fill="blue" stroke="navy" stroke-width="3">
+                                    <animate id="r4" attributeType="XML" attributeName="x" values="10;170;10" dur="2s"
+                                        begin="r3.end" />
+                                </rect>
+                            </svg>
+                        </td>
+                        <td>
+                            <h4>Ejemplo 5:</h4>
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="100" onclick="alert('You have clicked the circle.')" />
+                            </svg>
+                        </td>
+                        <td>
+                            <h4>Ejemplo 6:</h4>
+                            <svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='400'>
+
+                                <script type="text/ecmascript">
+                                    function changerect(evt) {
+                                        var svgobj = evt.target;
+                                        svgobj.style.opacity = 0.3;
+                                        svgobj.setAttribute('x', 300);
+                                    }
+                                </script>
+
+                                <rect />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Ejemplo 7:</h4>
+                            <svg width="300" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Un círculo -->
+                                <circle id="c1" cx="80" cy="100" r="40" fill="tomato" />
+                                <!-- Un rectángulo -->
+                                <rect id="r1" x="150" y="60" width="80" height="80" fill="steelblue" />
+                                <script type="text/ecmascript">
+                                    // Esperar a que exista el DOM del SVG
+                                    window.addEventListener("load", () => {
+                                        const circle = document.getElementById("c1");
+                                        const rect = document.getElementById("r1");
+                                        // Cambiar color al hacer click
+                                        circle.addEventListener("click", () => {
+                                            circle.setAttribute("fill", "gold");
+                                        });
+                                        // Mover rectángulo al acercar el mouse
+                                        rect.addEventListener("mouseover", () => {
+                                            rect.setAttribute("x", parseInt(rect.getAttribute("x")) + 10);
+                                        });
+                                        // Animación sencilla usando propiedades del SVG DOM
+                                        let grow = true;
+                                        setInterval(() => {
+                                            let r = circle.r.baseVal.value;
+                                            if (grow) r++; else r--;
+                                            if (r > 50) grow = false;
+                                            if (r < 30) grow = true;
+                                            circle.r.baseVal.value = r;
+                                        }, 30);
+                                    });
+                                </script>
+                            </svg>
+                        </td>
+                        <td>
+                            <h4>Ejemplo 8:</h4>
+                            <svg viewBox="0 0 100 100" height="300" style="background:grey">
+                                <rect x="0" y="0" width="50" height="50" fill="indigo" transform="translate(50 50)">
+                            </svg>
+                            <p>Valor de <code>X</code>: <input class="x" type="range" min="-25" max="75" value="50"></p>
+                            <p>Valor de <code>Y</code>: <input class="y" type="range" min="-25" max="75" value="50"></p>
+                            <script>
+                                const x = document.querySelector(".x");
+                                const y = document.querySelector(".y");
+                                const rect = document.querySelector("rect");
+                                const output = document.querySelector("output");
+                                const update = () => {
+                                    output.value = `${x.value} ${y.value}`;
+                                    rect.setAttribute("transform", `translate(${x.value} ${y.value})`);
+                                }
+                                x.addEventListener("input", () => update());
+                                y.addEventListener("input", () => update());
+                            </script>
+                        </td>
+                        <td>
+                            <h4>Ejemplo 9:</h4>
+                            <svg viewBox="0 0 100 100" height="300" style="background:grey">
+                                <rect x="0" y="0" width="50" height="50" fill="indigo" transform="rotate(45 50 50)">
+                            </svg>
+                            <p>Angulo de rotación:
+                                <input id="a" type="range" min="0" max="360" value="20">
+                            </p>
+                            <p>Valor de <code>X</code>: <input id="x" type="range" min="0" max="50" value="50"></p>
+                            <p>Valor de <code>Y</code>: <input id="y" type="range" min="0" max="50" value="50"></p>
+                            <output> </output>
+                            <script>
+                                let a = document.getElementById("a");
+                                x = document.getElementById("x");
+                                y = document.getElementById("y");
+                                const rect2 = document.querySelector("rect");
+                                const output2 = document.querySelector("output");
+                                const update2 = () => {
+                                    output.value = `${a.value} ${x.value} ${y.value}`;
+                                    rect.setAttribute("transform", `rotate(${a.value} ${x.value} ${y.value})`);
+                                }
+                                a.addEventListener("input", () => update2());
+                                x.addEventListener("input", () => update2());
+                                y.addEventListener("input", () => update2());
+                            </script>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h2>
+                    Ejercicio 2. Crea la figura de la izquierda (hecha en la practica anterior) y
+                    Modifica lo para que se muevan unos a izquierda y otros a derecha
+                </h2>
+            </div>
+            <div class="card-contenido">
+                <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" width="200" height="200"
+                    style="background-color: #fcf3ff;">
+                    <rect x="20" y="50" width="45" height="45" fill="cornflowerblue" id="rect-hover2">
+                        <animate attributeName="x" values="20;-10;20" dur="1s" repeatCount="indefinite" />
+                    </rect>
+                    <polygon points="80,70 100,30 120,70" fill="orange" id="tria-hover2">
+                        <animate attributeName="points"
+                            values="80,70 100,30 120,70;120,70 140,30 160,70;80,70 100,30 120,70" dur="2s"
+                            repeatCount="indefinite" />
+                    </polygon>
+                    <circle cx="100" cy="100" r="20" fill="red" id="circ-hover2">
+                        <animate attributeName="cx" values="100;140;100" dur=".5s" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h2>
+                    Ejercicio 3. Crea la figura de la izquierda (hecha en la practica anterior) y
+                    Modifica lo para que Cambien de color
+                </h2>
+            </div>
+            <div class="card-contenido">
+                <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" width="200" height="200"
+                    style="background-color: #fcf3ff;">
+                    <rect x="20" y="50" width="45" height="45" fill="cornflowerblue" id="rect-hover2">
+                        <animate attributeName="fill" values="cornflowerblue;darkslateblue;cornflowerblue" dur=".5s"
+                            repeatCount="indefinite" />
+                    </rect>
+                    <polygon points="80,70 100,30 120,70" fill="orange" id="tria-hover2">
+                        <animate attributeName="fill" values="orange;orangered;orange" dur="1s"
+                            repeatCount="indefinite" />
+                    </polygon>
+                    <circle cx="100" cy="100" r="20" fill="red" id="circ-hover2">
+                        <animate attributeName="fill" values="red;crimson;red" dur="2s" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h2>
+                    Ejercicio 4. usa el ejemplo de animateMotion para crear un path que lo
+                    sigan varias
+                </h2>
+            </div>
+            <div class="card-contenido">
+                <svg viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke="blue" stroke-width=".2"
+                        d="M 6 5 C 8 2 10 4 10 5 C 11 3 13 5 13 5 C 15 4 16 7 14 7 H 4 C 2 7 3 3 6 5" />
+                    <circle r=".35" fill="red">
+                        <animateMotion dur="10s" repeatCount="indefinite"
+                            path="M 6 5 C 8 2 10 4 10 5 C 11 3 13 5 13 5 C 15 4 16 7 14 7 H 4 C 2 7 3 3 6 5" />
+                    </circle>
+                    <circle r=".35" fill="orange">
+                        <animateMotion dur="15s" repeatCount="indefinite"
+                            path="M 6 5 C 8 2 10 4 10 5 C 11 3 13 5 13 5 C 15 4 16 7 14 7 H 4 C 2 7 3 3 6 5" />
+                    </circle>
+                    <circle r=".35" fill="green">
+                        <animateMotion dur="5s" repeatCount="indefinite"
+                            path="M 6 5 C 8 2 10 4 10 5 C 11 3 13 5 13 5 C 15 4 16 7 14 7 H 4 C 2 7 3 3 6 5" />
+                    </circle>
+                </svg>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h2>
+                    Ejercicio 5. Modifica el siguiente ejemplo para que se muevan a la izquierda todas las letras
+                    (animateTransform)
+                </h2>
+            </div>
+            <div class="card-contenido">
+                <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+                    <style>
+                        .small {
+                            font: italic 13px sans-serif;
+                        }
+
+                        .heavy {
+                            font: bold 30px sans-serif;
+                        }
+
+                        .Rrrrr {
+                            font: italic 40px serif;
+                            fill: red;
+                        }
+                    </style>
+
+                    <text x="20" y="35" class="small">El
+                        <animateTransform attributeName="transform" type="translate" from="0" to="-20" dur="1.5s"
+                            begin="0" end="1" fill="freeze" />
+                    </text>
+                    <text x="40" y="35" class="heavy">IES Playamar
+                        <animateTransform attributeName="transform" type="translate" from="0" to="-15" dur="1.5s"
+                            begin="1" end="2" fill="freeze" />
+                    </text>
+                    <text x="55" y="55" class="small">es
+                        <animateTransform attributeName="transform" type="translate" from="0" to="-50" dur="1.5s"
+                            begin="2" end="3" fill="freeze" />
+                    </text>
+                    <text x="65" y="55" class="Rrrrr">Genial!
+                        <animateTransform attributeName="transform" type="translate" from="0" to="-30" dur="1.5s"
+                            begin="3" end="4" fill="freeze" />
+                    </text>
+                </svg>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h2>
+                    Ejercicio 6. Modifica el anterior ejemplo para que giren sobre un mismo punto
+                </h2>
+            </div>
+            <div class="card-contenido">
+                <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+                    <style>
+                        .small {
+                            font: italic 13px sans-serif;
+                        }
+
+                        .heavy {
+                            font: bold 30px sans-serif;
+                        }
+
+                        .Rrrrr {
+                            font: italic 40px serif;
+                            fill: red;
+                        }
+                    </style>
+
+                    <text x="20" y="35" class="small">El
+                        <animateTransform attributeName="transform" type="rotate" from="50 50 50" to="515 20 50"
+                            dur="5s" repeatCount="indefinite" />
+                    </text>
+                    <text x="40" y="35" class="heavy">IES Playamar
+                        <animateTransform attributeName="transform" type="rotate" from="50 50 50" to="515 20 50"
+                            dur="5s" repeatCount="indefinite" />
+                    </text>
+                    <text x="55" y="55" class="small">es
+                        <animateTransform attributeName="transform" type="rotate" from="50 50 50" to="515 20 50"
+                            dur="5s" repeatCount="indefinite" />
+                    </text>
+                    <text x="65" y="55" class="Rrrrr">Genial!
+                        <animateTransform attributeName="transform" type="rotate" from="50 50 50" to="515 20 50"
+                            dur="5s" repeatCount="indefinite" />
+                    </text>
+                </svg>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h2>
+                    Ejercicio 7. Modifica el anterior ejemplo para que giren sobre si mismos.
+                </h2>
+            </div>
+            <div class="card-contenido">
+                <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+                    <style>
+                        .small {
+                            font: italic 13px sans-serif;
+                        }
+
+                        .heavy {
+                            font: bold 30px sans-serif;
+                        }
+
+                        .Rrrrr {
+                            font: italic 40px serif;
+                            fill: red;
+                        }
+                    </style>
+
+                    <text x="20" y="35" class="small">El
+                        <animateTransform attributeName="transform" type="rotate" from="0 20 25" to="360 20 25" dur="5s"
+                            repeatCount="indefinite" />
+                    </text>
+                    <text x="40" y="35" class="heavy">IES Playamar
+                        <animateTransform attributeName="transform" type="rotate" from="0 40 20" to="360 40 20" dur="5s"
+                            repeatCount="indefinite" />
+                    </text>
+                    <text x="55" y="55" class="small">es
+                        <animateTransform attributeName="transform" type="rotate" from="0 20 31" to="360 20 31" dur="5s"
+                            repeatCount="indefinite" />
+                    </text>
+                    <text x="65" y="55" class="Rrrrr">Genial!
+                        <animateTransform attributeName="transform" type="rotate" from="0 20 31" to="360 20 31" dur="5s"
+                            repeatCount="indefinite" />
+                    </text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
