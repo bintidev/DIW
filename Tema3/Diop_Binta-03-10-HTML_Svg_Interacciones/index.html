@@ -395,26 +395,22 @@
                 <svg viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" width="400">
 
                     <circle cx="20" cy="15" r="6" fill="red">
-                        <animate id="mov1" attributeName="cx" from="20" to="180" dur="2s" begin="0s" fill="freeze"
-                            repeatCount="indefinite" />
+                        <animate id="mov1" attributeName="cx" from="20" to="180" dur="2s" begin="0s" fill="freeze" />
                         <set begin="mov1.end" attributeName="visibility" to="hidden" />
                     </circle>
 
                     <circle cx="20" cy="30" r="6" fill="orange">
-                        <animate id="mov2" attributeName="cx" from="20" to="180" dur="2s" begin="2s" fill="freeze"
-                            repeatCount="indefinite" />
+                        <animate id="mov2" attributeName="cx" from="20" to="180" dur="2s" begin="2s" fill="freeze" />
                         <set begin="mov2.end" attributeName="visibility" to="hidden" />
                     </circle>
 
                     <circle cx="20" cy="45" r="6" fill="green">
-                        <animate id="mov3" attributeName="cx" from="20" to="180" dur="2s" begin="4s" fill="freeze"
-                            repeatCount="indefinite" />
+                        <animate id="mov3" attributeName="cx" from="20" to="180" dur="2s" begin="4s" fill="freeze" />
                         <set begin="mov3.end" attributeName="visibility" to="hidden" />
                     </circle>
 
                     <circle cx="20" cy="60" r="6" fill="blue">
-                        <animate id="mov4" attributeName="cx" from="20" to="180" dur="2s" begin="6s" fill="freeze"
-                            repeatCount="indefinite" />
+                        <animate id="mov4" attributeName="cx" from="20" to="180" dur="2s" begin="6s" fill="freeze" />
                         <set begin="mov4.end" attributeName="visibility" to="hidden" />
                     </circle>
 
@@ -461,7 +457,7 @@
                     <rect x="60" y="10" width="100" height="28" fill="green" />
                     <text id="malaga" fill="cyan" x="85" y="40">
                         Málaga!
-                        <animateTransform attributeName="transform" type="rotate" from="0 110 42" to="360 110 42"
+                        <animateTransform attributeName="transform" type="rotate" from="0 110 35" to="360 110 35"
                             dur="2s" begin="malaga.click" />
                     </text>
                 </svg>
@@ -483,11 +479,103 @@
                     <path id="coolPath" fill="none" stroke="grey" stroke-width="1"
                         d="M -3 -7 C -2 -9 3 -11 6 -6 C 9 0 6 4 -8 -2 C -20 -11 -4.6667 -13.3333 -2 -16 C 9 -21 11 -13 17" />
                     <circle r="1" fill="red">
-                        <animateMotion dur="10s" repeatCount="indefinite" begin="coolPath.click"
-                            end="coolPath.dblclick"
+                        <animateMotion id="animateCirc" dur="10s" repeatCount="indefinite" begin="coolPath.click"
                             path="M -3 -7 C -2 -9 3 -11 6 -6 C 9 0 6 4 -8 -2 C -20 -11 -4.6667 -13.3333 -2 -16 C 9 -21 11 -13 17" />
+                        <script>
+                            document.getElementById('coolPath').addEventListener('dblclick', () => {
+                                document.getElementById('animateCirc').setAttribute('fill', 'freeze');
+                            })
+                        </script>
                     </circle>
                 </svg>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h2>
+                    Ejercicio 9. Modifica los ejemplos 9,10 y 11 y para tener todos los controles (rotate, transform,
+                    skew) de la caja en un
+                    mismo ejemplo
+                </h2>
+            </div>
+            <div class="card-contenido">
+                <svg viewBox="0 0 100 100" height="300" style="background:grey">
+                    <rect id="full_rect" x="0" y="0" width="50" height="50" fill="indigo" transform="translate(50 50)" id="trect">
+                </svg>
+
+                <h2>Todos</h2>
+                <h3>Translate</h3>
+                <p>Valor de <code>X</code>: <input id="full_tx" type="range" min="-25" max="75" value="50"></p>
+                <p>Valor de <code>Y</code>: <input id="full_ty" type="range" min="-25" max="75" value="50"></p>
+                <output id="full_toutput"></output>
+                <script>
+                    const full_tx = document.getElementById("full_tx");
+                    const full_ty = document.getElementById("full_ty");
+                    let full_rect = document.getElementById("full_rect");
+                    const full_toutput = document.getElementById("full_toutput");
+                    const update9_1 = () => {
+                        full_toutput.value = `${full_tx.value} ${full_ty.value}`;
+                        full_rect.setAttribute("transform", `translate(${full_tx.value} ${full_ty.value})`);
+                    }
+                    full_tx.addEventListener("input", () => update9_1());
+                    full_ty.addEventListener("input", () => update9_1());
+                </script>
+
+                <h3>Rotate</h3>
+                <p>Angulo de rotación:
+                    <input id="full_a" type="range" min="0" max="360" value="20">
+                </p>
+                <p>Valor de <code>X</code>: <input id="full_rx" type="range" min="0" max="50" value="50"></p>
+                <p>Valor de <code>Y</code>: <input id="full_ry" type="range" min="0" max="50" value="50"></p>
+                <output id="full_routput"> </output>
+                <script>
+                    let full_a = document.getElementById("full_a");
+                    const full_rx = document.getElementById("full_rx");
+                    const full_ry = document.getElementById("full_ry");
+                    full_rect = document.getElementById("full_rect");
+                    const full_routput = document.getElementById("full_routput");
+                    const update9_2 = () => {
+                        full_routput.value = `${full_a.value} ${full_rx.value} ${full_ry.value}`;
+                        full_rect.setAttribute("transform", `rotate(${full_a.value} ${full_rx.value} ${full_ry.value})`);
+                    }
+                    full_a.addEventListener("input", () => update9_2());
+                    full_rx.addEventListener("input", () => update9_2());
+                    full_ry.addEventListener("input", () => update9_2());
+                </script>
+
+                <h3>Scale</h3>
+                <p>Escala: <input id="full_s" type="range" min="0" max="2" step="0.1" value="1"></p>
+                <output id="full_sout"> </output>
+                <script>
+                    const full_s = document.getElementById("full_s");
+                    full_rect = document.getElementById("full_rect");
+                    const full_sout = document.getElementById("full_sout");
+                    update9_3 = () => {
+                        full_sout.value = `${full_s.value}`;
+                        full_rect.setAttribute("transform", `scale(${full_s.value})`);
+                    }
+                    full_s.addEventListener("input", () => update9_3());
+                </script>
+
+                <h3>Skew</h3>
+                <p>Valor de <code> SkewX</code>: <input id="full_skx" type="range" min="0" max="50" value="0">
+                </p>
+                <p>Valor de <code>SkewY</code>: <input id="full_sky" type="range" min="0" max="50" value="0"></p>
+                <output id="full_skout"> </output>
+                <script>
+                    const full_skx = document.getElementById("full_skx");
+                    const full_sky = document.getElementById("full_sky");
+                    full_rect = document.getElementById("full_rect");
+                    const full_skout = document.getElementById("full_skout");
+                    full_skout.value = `${full_skx.value} ${full_sky.value}`;
+                    const update9_4 = () => {
+                        full_skout.value = `${full_skx.value} ${full_sky.value}`;
+                        full_rect.setAttribute("transform", `skewX(${full_skx.value}) skewY(${full_sky.value})`);
+                    }
+                    full_skx.addEventListener("input", () => update9_4());
+                    full_sky.addEventListener("input", () => update9_4());
+                </script>
             </div>
         </div>
     </div>
