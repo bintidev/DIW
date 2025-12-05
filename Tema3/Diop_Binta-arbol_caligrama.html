@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El árbol</title>
+</head>
+
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 40 30" style="background-color: #d3edf8;">
+        <path d="M 12 24 C 14 18 14 17 13 13 C 14 14 16 14 17 13 C 18 14 20 14 21 13 C 20 17 20 18 22 24 H 12"
+            fill="#efd1c3" stroke="none" stroke-width="2" id="tronco" />
+        <path d="M 17 1 C 19 -1 24 1 22 4 C 25 2 28 8 23 8 C 27 11 22 13 21 10 C 21 12 19 14 17 12 C 15 14 13
+        12 13 10 C 12 13 7 11 11 8 C 6 8 9 2 12 4 C 10 1 15 -1 17 1" fill="#dfecdf" stroke="none" stroke-width="2"
+            id="copa" />
+
+        <defs>
+            <style>
+                #troncoPoema {
+                    font-size: .33px;
+                    word-spacing: .12px;
+                }
+
+                #copaPoema {
+                    font-size: .3px;
+                    word-spacing: .75px;
+                }
+            </style>
+        </defs>
+
+        <text fill="brown" id="troncoPoema">
+            <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tronco">
+                La sombra de este árbol venerable
+                donde se quiebra y calma,
+                la furia de los vientos formidable
+                y cuya ancianidad inspira a mi alma
+                un respeto sagrado y misterioso;
+                cuyo tronco desnudo y escabroso
+                un buen asiento rústico me ofrece;
+            </textPath>
+        </text>
+        <text fill="green" id="copaPoema">
+            <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#copa">
+                y que de hojosa majestad cubierto
+                es el único rey de este desierto,
+                que vastísimo en torno me rodea;
+                aquí mi alma desea
+                venir a meditar; de aquí mi Musa
+                desplegando sus alas vagarosas
+                por el aire sutil tenderá el vuelo.
+            </textPath>
+        </text>
+    </svg>
+
+</body>
+
+</html>
