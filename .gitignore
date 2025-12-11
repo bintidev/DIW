@@ -1,5 +1,6 @@
 
 *.zip
+*.7z
 
 # ficheros de practica
 !Tema2/Diop_Binta-02-04 HTML Enlaces/assets/files/*
