@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a CSS</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="cabecera">
+        <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-10.png" alt="js-logo"
+            id="logo">
+        <h1>Binta - Selectores CSS</h1>
+    </div>
+
+    <div id="container">
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>Ejercicio 1. Rellena esta tabla y creala en el documento html</h4>
+                <img src="./assets/img/ej1.png" alt="">
+            </div>
+            <div class="card-contenido">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="color: magenta;">Elemento</td>
+                            <td style="color: olive;">Identificador</td>
+                            <td style="color: blue;">Clase</td>
+                            <td style="color: green;">Pseudoselector</td>
+                            <td style="color: palevioletred;">Espacio</td>
+                            <td style="color: blue;">SelectorHijo</td>
+                            <td style="color: brown;">regla1</td>
+                            <td style="color: brown;">valor</td>
+                            <td style="color: blue;">important</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>Ejercicio 2. Crea una regla CSS para que todos los elementos sean de color gris (selector * )</h4>
+            </div>
+            <div class="card-contenido">
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 3. Crea una regla para que los elementos que estén dentro de un p sean de color verde y
+                    fuente Georgia. (con descendientes )
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <p id="ej3">Elemento de color verde con fuente Georgia</p>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 4. Crea una regla para que todos los elementos que estén dentro de una tabla tengan bordes
+                    rojos y amarillos(con descendientes )
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <table id="ej4">
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                        </tr>
+                        <tr>
+                            <td>margin</td>
+                            <td>border</td>
+                            <td>padding</td>
+                            <td>content</td>
+                            <td>height</td>
+                            <td>width</td>
+                            <td>total height</td>
+                            <td>total width</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 5. Crea una regla para que todos los elementos que estén inmediatamente dentro de un p
+                    sean de color azul y fuente Arial. (con hijo > )
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <p>Elemento inmediatamente <span id="ej5">dentro de un elemento p</span></p>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 6. Crea una regla para que todos elementos strong deben tener color azul, pero sólo si son
+                    descendientes de un elemento de lista (li). El resto de los elementos strong no se verán afectados.
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <strong>Elemento strong normal</strong>
+                <pre><strong>Elemento strong descendiente de elemento pre</strong></pre>
+                <ul>
+                    <li><strong>Elemento strong descendiente de elemento li</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 7. Crea una regla para que todos enlaces dentro de un div y de una etiqueta debe tener
+                    color magenta (con descendiente + selector * ) <br><br>
+                    &lt;div&gt;hola&lt;div&gt; &#45;&#45;&gt; no magenta <br>
+                    &lt;div&gt;&lt;p&gt;hola&lt;p&gt;&lt;div&gt; &#45;&#45;&gt; no magenta
+                </h4>
+            </div>
+            <div class="card-contenido" id="ej7">
+                Contenido de div
+                <p><a href="#">Enlace descendiente de div y p</a></p>
+                <a href="#">Enlace descendiente de div</a>
+                <pre><a href="#">Enlace descendiente de div y pre</a></pre>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 8. Crea una regla para que todos enlaces que se hallan empezando un div no tengan
+                    subrayado (con descendiente hijo + selector *) div>a:first-child { text-decoration:none } <br>
+                    <br>
+                    &lt;div&gt;&lt;a href=""&gt; NO &lt;/a&gt;&lt;/div&gt; &#45;&#45;&gt; no subrayado <br>
+                    &lt;div&gt;&lt;p&gt;hola&lt;/p&gt;&lt;a href=""&gt;SI&lt;/a&gt;&lt;/div&gt; &#45;&#45;&gt; SI
+                    subrayado
+                </h4>
+            </div>
+            <div class="card-contenido" id="ej8">
+                <a href="#">No de</a>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 9. Modifica el ejemplo de @media para crear un estilo diferente cuando sea movil, por
+                    pantalla y para imprimir.
+                    En pantalla el p debe verse verde movil el p debe verse rojo y en print debe verse azul.
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <p id="ej9">Ejemplo de <code>@media</code></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
