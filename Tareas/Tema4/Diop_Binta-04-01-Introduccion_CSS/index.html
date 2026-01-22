@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a CSS</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        @import "./assets/css/imported.css";
+
+        #incrusatdo {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="cabecera">
+        <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-10.png" alt="js-logo"
+            id="logo">
+        <h1>Binta - Introducción a CSS</h1>
+    </div>
+
+    <div id="container">
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 1. Crea un documento htm en el que pongas los tres tipos de insertar css (linea,
+                    incrustado, link y @import) para poner los h1 en rojo , h2 en verde y p en azul
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <h1 style="color: red;">Inserción CSS en línea</h1>
+                <h2 id="incrustado">CSS incrustado</h2>
+                <p id="link">Link a hoja de estilo</p>
+                <p id="import">Fichero css importado</p>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>Ejercicio 2. Incrusta esta imagen en la pagina y Crea esta tabla en css con los conceptos</h4>
+                <img src="./assets/img/ejercicio2.png" alt="imagen">
+            </div>
+            <div class="card-contenido">
+                <table id="ej2">
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                        </tr>
+                        <tr>
+                            <td>margin</td>
+                            <td>border</td>
+                            <td>padding</td>
+                            <td>content</td>
+                            <td>height</td>
+                            <td>width</td>
+                            <td>total height</td>
+                            <td>total width</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>Ejercicio 3. Copia esta tabla en el html. Señala verdadero o falso</h4>
+            </div>
+            <div class="card-contenido">
+                <table id="ej3">
+                    <tr>
+                        <th>Afirmación</th>
+                        <th>Verdadero / Falso</th>
+                    </tr>
+                    <tr>
+                        <td>El content va fuera del padding</td>
+                        <td>Falso</td>
+                    </tr>
+                    <tr>
+                        <td>El padding va dentro del margin</td>
+                        <td>Verdadero</td>
+                    </tr>
+                    <tr>
+                        <td>El border va dentro del margin y el padding</td>
+                        <td>Falso</td>
+                    </tr>
+                    <tr>
+                        <td>El margin va entre el padding y el content</td>
+                        <td>Falso</td>
+                    </tr>
+                    <tr>
+                        <td>El border va fuera del padding</td>
+                        <td>Verdadero</td>
+                    </tr>
+                    <tr>
+                        <td>width total = width + padding left right + borders r l</td>
+                        <td>Verdadero</td>
+                    </tr>
+                    <tr>
+                        <td>width total = height + paddings + borders + margins</td>
+                        <td>Falso</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 4. Usa el anterior ejemplo. Crea un CSS que muestre la estructura y herencia y
+                    especificidad del selector y orden de las reglas. Se debe ver estas prioridades
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>Ejercicio 5. Inserta Comentarios en el anterior para ver que tiene mas o menos prioridad</h4>
+            </div>
+            <div class="card-contenido">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>Ejercicio 6. Crea los siguientes bordes usando css puedes usar esta estructura</h4>
+            </div>
+            <div class="card-contenido">
+                <div class="uno bordes">
+                    <br>
+                    <h3>Bordes 1.</h3>
+                    <br>
+                </div>
+
+                <div class="dos bordes">
+                    <br>
+                    <h3>Bordes 2.</h3>
+                    <br>
+                </div>
+
+                <div class="tres bordes">
+                    <br>
+                    <h3>Bordes 3. dashed</h3>
+                    <br>
+                </div>
+
+                <div class="cuatro bordes">
+                    <br>
+                    <h3>Bordes 4. ridge</h3>
+                    <br>
+                </div>
+
+                <div class="cinco bordes">
+                    <br>
+                    <h3>Bordes 5. dotted</h3>
+                    <br>
+                </div>
+
+                <div class="seis bordes">
+                    <br>
+                    <h3>Bordes 6. dashed</h3>
+                    <br>
+                </div>
+
+                <div class="siete bordes">
+                    <br>
+                    <h3>Bordes 7. outset</h3>
+                    <br>
+                </div>
+
+                <div class="ocho bordes">
+                    <br>
+                    <h3>Bordes 8. 7px inset</h3>
+                    <br>
+                </div>
+
+                <div class="nueve bordes">
+                    <br>
+                    <h3>Bordes 9. 10px groove</h3>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 7. Modifica el anterior ejercicio para que los ejercicios 1 a 4 queden con estos margenes
+                    (usa auto)
+
+                    <ul>
+                        <li>Borde1: alineado al centro</li>
+                        <li>Borde2: alineado a la derecha</li>
+                        <li>Borde3: alineado a la izquierda</li>
+                        <li>Borde4: a 100px de la izquierda</li>
+                    </ul>
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <div class="uno bordes" id="uno-mod">
+                    <br>
+                    <h3>Bordes 1.</h3>
+                    <br>
+                </div>
+
+                <div class="dos bordes" id="dos-mod">
+                    <br>
+                    <h3>Bordes 2.</h3>
+                    <br>
+                </div>
+
+                <div class="tres bordes" id="tres-mod">
+                    <br>
+                    <h3>Bordes 3. dashed</h3>
+                    <br>
+                </div>
+
+                <div class="cuatro bordes" id="cuatro-mod">
+                    <br>
+                    <h3>Bordes 4. ridge</h3>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 8. Modifica el anterior ejercicio para que los ejercicios 1 a 4 queden con estos paddings
+
+                    <ul>
+                        <li>Borde5: padding todos 20px</li>
+                        <li>Borde6: padding verticales 40px horizontales 100px</li>
+                        <li>Borde7: paddings 10 20 30 40px</li>
+                    </ul>
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <div class="cinco bordes" id="cinco-mod">
+                    <br>
+                    <h3>Bordes 5. dotted</h3>
+                    <br>
+                </div>
+
+                <div class="seis bordes" id="seis-mod">
+                    <br>
+                    <h3>Bordes 6. dashed</h3>
+                    <br>
+                </div>
+
+                <div class="siete bordes" id="siete-mod">
+                    <br>
+                    <h3>Bordes 7. outset</h3>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 9. Modifica el ejemplo de @media para crear un estilo diferente cuando sea movil, por
+                    pantalla y para imprimir.
+                    En pantalla el p debe verse verde movil el p debe verse rojo y en print debe verse azul.
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <p id="ej9">Ejemplo de <code>@media</code></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

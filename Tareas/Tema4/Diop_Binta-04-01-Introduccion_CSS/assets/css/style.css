@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cbcddb;
+    scroll-behavior: smooth;
+}
+
+#cabecera {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #1c1c44;
+    font-size: 22px;
+}
+
+#logo {
+    margin-right: .55rem;
+    width: 55px;
+}
+
+#container {
+    width: auto;
+    background-color: #ffffff;
+    margin: 4rem .5rem -.42rem .5rem;
+    padding: 1.5rem;
+    padding-bottom: 0;
+}
+
+.card-ejercicio {
+    display: inline;
+    border-radius: 10px;
+    width: auto;
+    margin: 10px;
+    line-height: 2rem;
+}
+
+.card-cabecera {
+    background-color: #2c3474;
+    color: #edfda8;
+    padding: 1.50rem;
+    border-radius: 20px 20px 0 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20.5px;
+}
+
+.card-contenido {
+    background-color: #e6e9dc;
+    padding: 1rem !important;
+    border-radius: 0 0 20px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13.5px;
+}
+
+table,
+tr,
+th,
+td {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+#ej2 td {
+    width: 175px;
+    text-align: center;
+}
+
+#ej3 td {
+    width: 50%;
+}
+
+#ej3 td:nth-child(even) {
+    text-align: center;
+}
+
+#link {
+    color: blue;
+}
+
+@media screen and (min-width: 1000px) {
+
+    #container {
+        width: 65%;
+    }
+
+}
+
+@media screen {
+    #ej9 {
+        color: green;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    #ej9 {
+        color: red;
+    }
+}
+
+@media print {
+    #ej9 {
+        color: blue;
+    }
+}
