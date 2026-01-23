@@ -84,7 +84,7 @@ td {
 }
 
 table#ej4 tr,
-th {
+table#ej4 th {
     border: solid 1px yellow;
     border-collapse: collapse;
 }
@@ -106,6 +106,86 @@ li>strong {
 
 div#ej7>*>a {
     color: magenta;
+}
+
+div.ej8>a:first-child {
+    text-decoration: none;
+}
+
+h1.ej9>strong {
+    text-decoration: underline;
+}
+
+h3+p {
+    color: red;
+}
+
+#ejercicio11 {
+    color: red;
+}
+
+.ejercicio12 {
+    color: blue;
+}
+
+.ejercicio13 {
+    color: blue;
+}
+
+h2.ejercicio13 {
+    color: green;
+}
+
+h3.ejercicio13 {
+    color: yellow;
+}
+
+a.ejercicio14 {
+    color: green;
+
+    &:visited {
+        color: olive;
+    }
+
+    &:hover {
+        color: red;
+    }
+
+    &:active {
+        color: blue;
+    }
+}
+
+p.ejercicio15 {
+    color: blue !important;
+}
+
+p>*.ejercicio15 {
+    color: green;
+}
+
+p.ejercicio16 {
+    color: blue !important;
+}
+
+p.ejercicio17::first-line {
+    color: blue;
+}
+
+p.ejercicio17::first-letter {
+    color: red;
+}
+
+input.ejercicio18:focus {
+    background-color: yellow;
+}
+
+ul#ejercicio19 li:first-child {
+    font-weight: bold;
+}
+
+p.ejercicio20:lang(en) {
+    color: red;
 }
 
 @media screen and (min-width: 1000px) {

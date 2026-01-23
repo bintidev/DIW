@@ -165,21 +165,256 @@
                     subrayado
                 </h4>
             </div>
-            <div class="card-contenido" id="ej8">
-                <a href="#">No de</a>
+            <div class="card-contenido">
+                <div class="ej8">
+                    <a href="#">No debe estar subrayado</a>
+                </div>
+                <div class="ej8">
+                    <p>Textooooooooo</p>
+                    <a href="#">Debe estar subrayado</a>
+                </div>
             </div>
         </div>
 
         <div class="card-ejercicio">
             <div class="card-cabecera">
                 <h4>
-                    Ejercicio 9. Modifica el ejemplo de @media para crear un estilo diferente cuando sea movil, por
-                    pantalla y para imprimir.
-                    En pantalla el p debe verse verde movil el p debe verse rojo y en print debe verse azul.
+                    Ejercicio 9. Crea una regla para que todos strong que se hallan justo dentro un h1 tengan subrayado
+                    (con descendiente hijo ) h1>strong { text-decoration:underline}
+                    <br>
+                    &lt;h1&gt;&lt;div&gt;&lt;strong&gt;no es nada&lt;strong&gt;&lt;/div&gt;&lt;h1&gt; &#45;&#45;&gt; NO
+                    subrayado <br>
+                    &lt;h1&gt;&lt;div&gt; no es nada &lt;/div&gt;&lt;/h1&gt; &#45;&#45;&gt; SI subrayado
                 </h4>
             </div>
             <div class="card-contenido">
-                <p id="ej9">Ejemplo de <code>@media</code></p>
+                <h1 class="ej9">
+                    <div>
+                        <strong>No debe estar subrayado</strong>
+                    </div>
+                </h1>
+                <h1 class="ej9">
+                    <strong>Debe estar subrayado</strong>
+                </h1>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 10. Crea una regla para que todos p que van junto con un h3 sean rojos (con selectores
+                    adyacentes-hermanos)
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <h3>Esto es un H3</h3>
+                <p>Esto es un p hermano de h3</p>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 11. Crea una regla para que el elemento con el identificador ejercicio10 sean rojos
+                    (#ejercicio11)
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <pre id="ejercicio11">Hola, hola, caracola!! :D</pre>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 12. Crea una regla para que los elementos con la clase ejercicio11 sean Azul
+                    (.ejercicio12)
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <pre class="ejercicio12">Hola, hola, caracola!! :D</pre>
+                <div>
+                    <p>WEIIIIII</p>
+                    <code class="ejercicio12">Codigoocccc</code>
+                </div>
+                <mark class="ejercicio12">Tiririririririri oe?</mark>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 13. Crea dos reglas para que los elementos con la clase ejercicio12 sean Azules excepto
+                    los h2 que deben ser verdes y los h3 que deben ser amarillos
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <pre class="ejercicio13">Hola, hola, caracola!! :D</pre>
+                <div>
+                    <p>WEIIIIII</p>
+                    <h2 class="ejercicio13">Codigoocccc</h2>
+                </div>
+                <h3 class="ejercicio13">Tiririririririri oe?</h3>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 14. Crea una regla de pseudoclase para que los enlaces con clase ejercicio13 tengan estos
+                    colores:
+
+                    <ul>
+                        <li>Verde si todavía no ha sido visitado</li>
+                        <li>Verde Oliva si ha sido visitado</li>
+                        <li>Rojo mientras el ratón pasa por encima</li>
+                        <li>Azul justo cuando se pulsa el ratón sobre</li>
+                        <li>Escribe dentro del párrafo un memotecnico para el concepto Orden Pseudoclase = LVH</li>
+                    </ul>
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <p>
+                    Link: a:link (enlace no visitado) <br>
+                    Visited: a:visited (enlace visitado) <br>
+                    Hover: a:hover (cursor sobre el enlace) <br>
+                    Active: a:active (enlace presionado) <br>
+
+                    <a href="#" class="ejercicio14">Enlace1</a>
+                    <a href="#" class="ejercicio14">Enlace2</a>
+                    <a href="#" class="ejercicio14">Enlace3</a>
+                    <a href="#" class="ejercicio14">Enlace4</a>
+                    <a href="#" class="ejercicio14">Enlace5</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 15. Crea dos regla para que los elementos con la clase ejercicio15
+
+                    <ul>
+                        <li>Regla 1 : que todos los p sean Azules con la clave !important</li>
+                        <li>Regla 2 : que los elementos con la clase ejercicio14 de p sean verdes</li>
+                    </ul>
+
+                    Indica en un párrafo porque teniendo más prioridad la regla 2 se ven azules los que cumplen la 2
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <p class="ejercicio15">Parrafo1</p>
+                <p>Parrafo2
+                    <b class="ejercicio15">kfkdsjhfkjsf</b>
+                    <i class="ejercicio15">jdfksjfkjs</i>
+                </p>
+                <p>
+                    La palabra clave <code>!important</code> da prioridad a cualquier regla
+                    a la que se aplique sobre cualquier otra
+                </p>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 16. Crea dos regla para que los elementos con la clase ejercicio16
+
+                    <ul>
+                        <li>Regla 1 : que todos los p sean Azules con la clave !important en un archivo externo</li>
+                        <li>Regla 2 : que todos los p sean Negros en css en line</li>
+                    </ul>
+
+                    Indica en un párrafo porque teniendo más prioridad la regla 2 se ven azules los que cumplen la 2
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <p class="ejercicio16">Parrafo1</p>
+                <p class="ejercicio16" style="color: black;">Parrafo2</p>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 17. Crea cuatro reglas para que los elementos p con la clase ejercicio16
+
+                    <ul>
+                        <li>Regla 1: que la su primera línea de todos los p sean Azules</li>
+                        <li>Regla 2: que la su primera letra de todos los p sean rojas y tamaño 15</li>
+                        <li>Regla 3: que los elementos que siguen al texto hola dentro de un p sean verde</li>
+                        <li>Regla 4 : que los elementos que siguen al texto adios dentro de un p sean Amarillo</li>
+                    </ul>
+
+                    Debes usar <code>(:first-line) (:first-letter) (:before) (:after).</code>
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <p class="ejercicio17">
+                    Línea 1 - debe verse azul <br>
+                    Línea 2 - no debe verse azul
+                </p>
+                <p class="ejercicio17">
+                    Línea 1 - debe verse azul <br>
+                    Línea 2 - no debe verse azul <br>
+                    I luv CoryxKenshin >o< <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 18. Crea una regla con :focus hace referencia a los elementos que tienen el foco de un
+                    formulario se iluminen. Un ejemplo sería:
+                    <code>input:focus {background-color: yellow;}.</code> <br>
+                    Crea un formulario con 5 input text para observarlo.
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <form action="">
+                    <h3>Formulario solicitud</h3>
+
+                    <input type="text" placeholder="Nombre" class="ejercicio18"> <br>
+                    <input type="text" placeholder="Apellidos" class="ejercicio18"> <br>
+                    <input type="text" placeholder="Correo" class="ejercicio18"> <br>
+                    <input type="text" placeholder="Domicilio" class="ejercicio18"> <br>
+                    <input type="text" placeholder="Nivel educativo" class="ejercicio18">
+                </form>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 19. Crea una regla con :first-child hace referencia el primer hijo de un elemento padre.
+                    En el siguiente ejemplo se aplica el estilo al primer elemento de una lista desordenada: <br>
+                    <code>ul li:first-child {font-weight: bold;}</code> <br>
+                    Aplica el anterior estilo a una lista con 5 elementos
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <ul id="ejercicio19">
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                    <li>Cuarto elemento</li>
+                    <li>Quinto elemento</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-ejercicio">
+            <div class="card-cabecera">
+                <h4>
+                    Ejercicio 20. :lang(idioma) hace referencia al idioma en el que está un determinado elemento. En el
+                    siguiente ejemplo se aplica el estilo a cualquier párrafo que esté escrito en inglés: p:lang(en)
+                    {color: red}
+                </h4>
+            </div>
+            <div class="card-contenido">
+                <p class="ejercicio20">This text is in english</p>
+                <p class="ejercicio20">Este texto está en español</p>
             </div>
         </div>
     </div>
