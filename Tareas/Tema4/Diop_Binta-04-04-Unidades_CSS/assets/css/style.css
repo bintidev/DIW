@@ -1,0 +1,357 @@
+:root {
+    --cont-bg-color: #f0cdd0;
+    --cont-borders: solid 1px black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3e4e5;
+    scroll-behavior: smooth;
+}
+
+#cabecera {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #2A398C;
+    font-size: 22px;
+}
+
+#logo {
+    margin-right: .55rem;
+    width: 55px;
+}
+
+#container {
+    width: auto;
+    background-color: #ffffff;
+    margin: 4rem .5rem -.42rem .5rem;
+    padding: 1.5rem;
+    padding-bottom: 0;
+}
+
+.card-ejercicio {
+    display: inline;
+    border-radius: 10px;
+    width: auto;
+    margin: 10px;
+    line-height: 2rem;
+}
+
+.card-cabecera {
+    background-color: #5266a0;
+    color: #F2B3B9;
+    padding: 1.50rem;
+    border-radius: 20px 20px 0 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20.5px;
+}
+
+.card-contenido {
+    background-color: #b4b9da;
+    padding: 1rem !important;
+    border-radius: 0 0 20px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15.5px;
+}
+
+/* EJERCICIO 1 */
+div.ej1-cont1 {
+    width: 100px;
+    height: 60px;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej1-cont2 {
+    width: 35px;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej1-cont3 {
+    height: 215px;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+/* EJERCICIO 2 */
+div.ej2-cont1 {
+    width: 100pt;
+    height: 60pt;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej2-cont2 {
+    width: 35pt;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej2-cont3 {
+    height: 215pt;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+
+/* EJERCICIO 3 */
+div.ej3-cont1 {
+    width: 100in;
+    height: 60in;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej3-cont2 {
+    width: 35in;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej3-cont3 {
+    height: 215in;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+/* EJERCICIO 4 */
+div.ej4-cont1 {
+    width: 100in;
+    height: 60in;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej4-cont2 {
+    width: 35in;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej4-cont3 {
+    height: 215in;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+/* EJERCICIO 5 */
+div.ej5-cont1 {
+    width: 100pc;
+    height: 60pc;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej5-cont2 {
+    width: 35pc;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej5-cont3 {
+    height: 215pc;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+
+/* EJERCICIO 6 */
+div.ej6-cont1 {
+    width: 100mm;
+    height: 60mm;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej6-cont2 {
+    width: 35mm;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej6-cont3 {
+    height: 215mm;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+/* EJERCICIO 7 */
+div.ej7-cont1 {
+    width: 100q;
+    height: 60q;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej7-cont2 {
+    width: 35q;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej7-cont3 {
+    height: 215q;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+/* EJERCICIO 8 */
+div.ej8-cont1 {
+    width: 100%;
+    height: 60%;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej8-cont2 {
+    width: 35%;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej8-cont3 {
+    height: 215%;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+/* EJERCICIO 9 */
+div.ej9-cont1 {
+    width: 100rem;
+    height: 60rem;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej9-cont2 {
+    width: 35rem;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej9-cont3 {
+    height: 215rem;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+/* EJERCICIO 10 */
+div.ej10-cont1 {
+    width: 100lh;
+    height: 60lh;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej10-cont2 {
+    width: 35lh;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej10-cont3 {
+    height: 215lh;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+/* EJERCICIO 11 */
+div.ej11-cont1 {
+    width: 100rex;
+    height: 60rex;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej11-cont2 {
+    width: 35rex;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej11-cont3 {
+    height: 215rex;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+/* EJERCICIO 12 */
+div.ej12-cont1 {
+    width: 100ch;
+    height: 60ch;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej12-cont2 {
+    width: 35ch;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej12-cont3 {
+    height: 215ch;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+/* EJERCICIO 13 */
+div.ej13-cont1 {
+    width: 100rcap;
+    height: 60rcap;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej13-cont2 {
+    width: 35rcap;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej13-cont3 {
+    height: 215rcap;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+/* EJERCICIO 14 */
+div.ej14-cont1 {
+    width: 100ic;
+    height: 60ic;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej14-cont2 {
+    width: 35ic;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+div.ej14-cont3 {
+    height: 215ic;
+    background-color: var(--cont-bg-color);
+    border: var(--cont-borders);
+}
+
+@media screen and (min-width: 1000px) {
+
+    #container {
+        width: 65%;
+    }
+
+}
