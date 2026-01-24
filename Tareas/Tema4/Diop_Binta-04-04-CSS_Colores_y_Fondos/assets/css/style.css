@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://wallpapers-clan.com/wp-content/uploads/2024/03/starfall-night-sky-mountains-aesthetic-gif-cover-desktop-wallpaper.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    scroll-behavior: smooth;
+}
+
+#cabecera {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #193441;
+    font-size: 22px;
+}
+
+#logo {
+    margin-right: .55rem;
+    width: 55px;
+}
+
+#container {
+    width: auto;
+    background-color: #ffffff;
+    margin: 4rem .5rem -.42rem .5rem;
+    padding: 1.5rem;
+    padding-bottom: 0;
+}
+
+.card-ejercicio {
+    display: inline;
+    border-radius: 10px;
+    width: auto;
+    margin: 10px;
+    line-height: 2rem;
+}
+
+.card-cabecera {
+    background-color: #F2792F;
+    color: #434c4d;
+    padding: 1.50rem;
+    border-radius: 20px 20px 0 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20.5px;
+}
+
+.card-contenido {
+    background-color: #D3D3D3;
+    padding: 1rem !important;
+    border-radius: 0 0 20px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15.5px;
+}
+
+.card-contenido button {
+    width: auto;
+    padding: 10px;
+    border-radius: 50px;
+    border: solid 1px #193441;
+    background-color: transparent;
+    color: #193441;
+    font-size: 15px;
+
+    &:hover {
+        background-color: #193441;
+        color: white;
+        cursor: pointer;
+        transition-duration: .3s;
+    }
+}
+
+/* EJERCICIO 2 */
+div.ej2-cont1 {
+    background-color: gray;
+}
+
+div.ej2-cont2 {
+    background-color: #0000FF;
+}
+
+div.ej2-cont3 {
+    background-color: rgb(128, 45, 98);
+}
+
+div.ej2-cont4 {
+    background-color: rgba(30, 206, 5, 0.47);
+}
+
+div.ej2-cont5 {
+    background-color: lch(62, 38, 40);
+}
+
+div.ej2-cont6 {
+    background-color: hsl(170, 46%, 45%);
+}
+
+div.ej2-cont7 {
+    background-color: lab(73% 89 116);
+}
+
+div.ej2-cont8 {
+    background-color: oklab(39% 0.216 .37/.9);
+}
+
+div.ej2-cont9 {
+    background-color: hwb(40 35% 0%);
+}
+
+/*div.ej2-cont6 {}*/
+
+@media screen and (min-width: 1000px) {
+
+    #container {
+        width: 65%;
+    }
+
+}
